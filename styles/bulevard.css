@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+header {
+  background-image: url(../assets/HOME/wood.jpg);
+  text-align: center;
+  height: 20vh;
+  line-height: 20vh;
+  grid-column: 1/3;
+}
+h1 {
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+  color: white;
+}
+
+.nav-dropdown {
+  border: 3px solid blue;
+}
+
+.nav-dropdown * {
+  border: 3px solid firebrick;
+}
+main {
+  border: 3px solid green;
+}
+footer {
+  border: 3px solid yellow;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
