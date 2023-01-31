@@ -31,4 +31,13 @@ Gallery tasks:
 -Column arranged images with drinks,cocktails and the place 
 *Have Header,Footer,Nav-bar integrated
 
- 
+home summary text:!-- <p>
+					Cafe bulevard… un loc o legenda…. De 23 de ani aici poti savura
+					prestigioasa cafea Julius Meinl cu spuma generoasa si preparatele ei
+					delicioase Latte sau Capucino, precum si fabulosul Frappe preparat ca
+					la carte. O Limonada minunata cu gust intens de menta si socva
+					racoreste zilele de vara , un ceai fierbinte va incalzeste sufletele
+					iarna. O bere rece sau o halba brumata scoasa din congelator poate fi
+					o alta preferinta. Pentru pretentiosi servim o gama diversificata de
+					alcool si coktailuri minunate si viu colorate!
+				</p> -->
