@@ -1,0 +1,20 @@
+.image__track-body {
+  background-color: var(--background-color);
+  height: 100%;
+  .image__track-container {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    .image__style {
+      user-select: none;
+      border-radius: 50px;
+      width: 45vmin;
+      height: 50vmin;
+      object-fit: cover;
+      animation: object-positon forwards 1200ms;
+    }
+  }
+}

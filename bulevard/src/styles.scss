@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+:root {
+  --background-color: rgb(0, 0, 0);
+  --container-color: rgb(213, 206, 163);
+  --text-color: rgb(229, 229, 203);
+  --accent-color: rgb(60, 42, 33);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flexRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
