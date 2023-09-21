@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ImageTrackComponent } from './image-track.component';
+import { ContactComponent } from './contact.component';
 
-describe('ImageTrackComponent', () => {
-  let component: ImageTrackComponent;
-  let fixture: ComponentFixture<ImageTrackComponent>;
+describe('ContactComponent', () => {
+  let component: ContactComponent;
+  let fixture: ComponentFixture<ContactComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ImageTrackComponent ]
+      declarations: [ ContactComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ImageTrackComponent);
+    fixture = TestBed.createComponent(ContactComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

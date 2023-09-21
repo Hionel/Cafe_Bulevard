@@ -1,11 +1,25 @@
-<section class="landing__container">
-  <header>Header</header>
-  <div>
-    <div class="heading__title">Cafe bulevard description</div>
-    <app-image-track></app-image-track>
+<main class="landing__container" (scroll)="manualScroll($event)">
+  <header class="header__container">
+    <app-navigation></app-navigation>
+  </header>
+  <div class="sections__container">
+    <section
+      #heroSection
+      id="/"
+      class="hero__container section"
+      [ngStyle]="{ 'background-image': 'url(' + heroBackgroundUrl + ')' }"
+    >
+      <app-hero></app-hero>
+    </section>
+    <section #menuSection id="menu" class="menu__container section">
+      <app-menu></app-menu>
+    </section>
+    <section #gallerySection id="gallery" class="gallery__container section">
+      <app-gallery></app-gallery>
+    </section>
+    <section #contactSection id="contact" class="contact__container section">
+      <app-contact></app-contact>
+    </section>
+    <footer class="footer__container">footer area</footer>
   </div>
-  <article>Menu</article>
-  <article>Gallery</article>
-  <article>Contact</article>
-  <aside>footer</aside>
-</section>
+</main>

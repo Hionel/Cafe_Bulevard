@@ -13,7 +13,7 @@ import { ImageSlideTrackerService } from 'src/app/service/image-slide-tracker.se
           objectPosition: '100% center',
           animationFillMode: 'forwards',
         }),
-        animate('1200ms', style({ objectPosition: '{{objectPosition}}' })),
+        animate('200ms', style({ objectPosition: '{{objectPosition}}' })),
       ]),
     ]),
   ],

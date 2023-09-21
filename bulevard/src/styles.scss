@@ -1,16 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ropa+Sans:ital@0;1&display=swap");
 :root {
-  --background-color: rgb(0, 0, 0);
-  --container-color: rgb(213, 206, 163);
-  --text-color: rgb(229, 229, 203);
-  --accent-color: rgb(60, 42, 33);
+  --background-color: rgb(25, 25, 25);
+  --text-color: rgb(255, 255, 255);
+  --accent-color: #65000b;
+  --headingPercentageSize: 7.5%;
+  --menu-text-color: rgb(25, 25, 25);
+  --background-color-menu: rgb(255, 255, 255);
+  --background-color-gallery: rgb(0, 0, 0);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Ropa Sans", cursive;
 }
 .flexRow {
   display: flex;
