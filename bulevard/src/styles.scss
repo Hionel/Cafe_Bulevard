@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ropa+Sans:ital@0;1&display=swap");
+:root {
+  --background-color: rgb(25, 25, 25);
+  --text-color: rgb(255, 255, 255);
+  --accent-color: #65000b;
+  --headingPercentageSize: 7.5%;
+  --menu-text-color: rgb(25, 25, 25);
+  --background-color-menu: rgb(255, 255, 255);
+  --background-color-gallery: rgb(0, 0, 0);
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ropa Sans", cursive;
+}
+.flexRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}

@@ -1,0 +1,27 @@
+.image__track-body {
+  height: 75%;
+  position: relative;
+  cursor: crosshair;
+  .image__track-container {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    .image__style {
+      user-select: none;
+      border-radius: 50px;
+      width: 45vmin;
+      height: 50vmin;
+      object-fit: cover;
+      animation: object-positon forwards 1200ms;
+      transition: all 220ms ease-in-out;
+
+      &:hover {
+        cursor: grab;
+        transition: all 220ms ease-in-out;
+      }
+    }
+  }
+}

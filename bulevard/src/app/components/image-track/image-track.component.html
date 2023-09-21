@@ -1,0 +1,23 @@
+<section
+  class="image__track-body"
+  (mousedown)="mouseDown($event)"
+  (mousemove)="mouseMove($event)"
+  (mouseup)="mouseUp()"
+>
+  <article class="image__track-container" [style.transform]="transform">
+    <img
+      [src]="image.url"
+      alt="No Drinkgs"
+      class="image__style"
+      [draggable]="image.draggable"
+      [style.objectPosition]="imageTrackPercentage + '%' + '20%'"
+      [@animateObjectPosition]="{
+        value: true,
+        params: {
+          objectPosition: imageTrackPercentage + '%' + '20%'
+        }
+      }"
+      *ngFor="let image of imagesList"
+    />
+  </article>
+</section>
