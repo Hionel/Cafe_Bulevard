@@ -1,0 +1,16 @@
+<section
+  class="landing__page__logo__container flexColumn"
+  [ngStyle]="{
+    'background-image': 'url(' + landingPageBackgroundUrl + ')'
+  }"
+>
+  <div class="landing__page__logo__wrapper flexColumn">
+    <img
+      class="landing__page__logo"
+      [src]="landingPageLogoUrl"
+      alt="Bulevard"
+      (click)="navigateHome()"
+    />
+    <h1 class="landing__page__title" (click)="navigateHome()">Cafe Bulevard</h1>
+  </div>
+</section>

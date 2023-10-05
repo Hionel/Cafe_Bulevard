@@ -1,30 +1,77 @@
 .navigation__container {
   height: 100%;
-  justify-content: space-between;
-  padding: 0 5% 0 5%;
+  overflow: hidden;
   .navigation__logo__container {
-    height: inherit;
-    width: 15%;
+    height: 20%;
+    justify-content: flex-end;
+    padding-bottom: 10%;
     .navigation__logo {
       cursor: pointer;
-      font-family: "Great Vibes", cursive;
-      font-size: 2rem;
-      letter-spacing: 0.5px;
+      filter: invert(1);
+      width: 5rem;
+      aspect-ratio: 1;
+      transition: all 220ms ease-in-out;
+      &:hover {
+        scale: 1.1;
+        transition: all 220ms ease-in-out;
+      }
     }
   }
   .navigation__controls__container {
-    height: inherit;
-    width: 65%;
-    gap: 15%;
-    border-bottom: 0.5px solid white;
+    height: 70%;
+    justify-content: flex-start;
+    gap: 1rem;
     .navigation__button {
       font-size: 1rem;
       color: var(--text-color);
       border: none;
       background: transparent;
+      cursor: pointer;
+
+      // &:hover {
+      // }
+    }
+  }
+  .navigation__socials__container {
+    height: 10%;
+    justify-content: space-evenly;
+    .social__logo {
+      cursor: pointer;
+      filter: invert(1);
+      width: 1.5rem;
+      aspect-ratio: 1;
+      transition: all 220ms ease-in-out;
+
       &:hover {
-        cursor: pointer;
+        scale: 1.1;
+        transition: all 220ms ease-in-out;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .navigation__container {
+    .navigation__controls__container {
+      .navigation__button {
+        font-size: 2rem;
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .navigation__container {
+    .navigation__logo__container {
+      height: 25%;
+      padding-bottom: 25%;
+    }
+    .navigation__controls__container {
+      height: 60%;
+    }
+    .navigation__socials__container {
+      height: 15%;
     }
   }
 }

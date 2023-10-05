@@ -1,0 +1,80 @@
+.menu__category__container {
+  text-align: center;
+  height: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .menu__category__header__container {
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color);
+    .menu__category__header__title {
+      font-family: "Great Vibes", cursive;
+      font-size: 3rem;
+      font-weight: bolder;
+    }
+    .menu__category__header__closeBtn {
+      color: var(--text-color);
+      cursor: pointer;
+      font-family: "Great Vibes", cursive;
+      font-size: 1rem;
+      background: transparent;
+      border: none;
+      transition: all 220ms ease-in-out;
+
+      &:hover {
+        scale: 1.5;
+        transition: all 220ms ease-in-out;
+      }
+    }
+  }
+
+  .menu__subcategories__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15%;
+    .menu__subcategory__container {
+      width: 50%;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1rem;
+      height: fit-content;
+      border-top: 0.5px solid white;
+      .menu__subcategory__title {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        font-style: italic;
+      }
+      .menu__subcategory__description {
+        width: 65%;
+        font-style: italic;
+        font-size: 0.75rem;
+      }
+      .menu__subcategory__items__list {
+        list-style: none;
+        gap: 0.5rem;
+        .menu__subcategory__item {
+          .product__name_and_price {
+            font-size: 1.25rem;
+            // width: 100%;
+          }
+          .product__description,
+          .product__type,
+          .product__quantity {
+            font-style: italic;
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+}

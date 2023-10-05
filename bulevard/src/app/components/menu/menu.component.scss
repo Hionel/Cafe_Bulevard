@@ -1,4 +1,71 @@
 .menu__wrapper {
   height: 100%;
-  background-color: #e0c0b6;
+  background-color: var(--background-color);
+  padding: 1rem 0;
+  gap: 1rem;
+  .menu__title___container {
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    .menu__title {
+      font-family: "Great Vibes", cursive;
+      font-size: 6rem;
+      letter-spacing: 0.25px;
+    }
+  }
+
+  .navigation__categories__container {
+    width: 100%;
+    height: 15%;
+
+    .navigation__categories__list {
+      justify-content: space-evenly;
+      .navigation__categories__item {
+        list-style: none;
+        .navigation__item__button {
+          cursor: pointer;
+          font-size: 1.5rem;
+          color: var(--text-color);
+          border: none;
+          background: transparent;
+        }
+      }
+    }
+  }
+  .menu__display__container {
+    width: 100%;
+    height: 70%;
+    .menu__closed__display {
+      width: 100%;
+      text-align: center;
+      padding-top: 5%;
+      gap: 2rem;
+      .menu__closed__display__message {
+        font-size: 0.75rem;
+        font-style: italic;
+      }
+      .menu__closed__display__providers {
+        width: 100%;
+        .menu__providers__title {
+          font-style: italic;
+          font-weight: lighter;
+          font-size: 1.5rem;
+        }
+        .menu__providers__list {
+          list-style: none;
+          justify-content: space-around;
+          .menu__providers__item {
+            padding: 1.5rem;
+          }
+          .menu__provider__logo {
+            width: 120px;
+            aspect-ratio: 1;
+          }
+        }
+      }
+    }
+    .menu__open__display {
+      height: 100%;
+    }
+  }
 }

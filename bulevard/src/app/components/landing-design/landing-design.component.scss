@@ -1,0 +1,52 @@
+.landing__page__logo__container {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  .landing__page__logo__wrapper {
+    height: 100%;
+    .landing__page__logo {
+      cursor: pointer;
+      filter: invert(1);
+      width: 50%;
+      aspect-ratio: 1;
+      transition: all 220ms ease-in-out;
+      opacity: 0;
+      animation: fadeInOut 3s ease-in;
+      animation-fill-mode: forwards;
+      &:hover {
+        scale: 1.1;
+        transition: all 220ms ease-in-out;
+      }
+    }
+    .landing__page__title {
+      cursor: pointer;
+      font-size: 5rem;
+      font-weight: 100;
+      font-family: "Alex brush", cursive;
+      opacity: 0;
+      animation: fadeInOut 1.5s ease-in;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .landing__page__logo__container {
+    .landing__page__logo__wrapper {
+      .landing__page__logo {
+        width: 85%;
+      }
+    }
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

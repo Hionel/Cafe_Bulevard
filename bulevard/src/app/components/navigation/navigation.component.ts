@@ -8,11 +8,18 @@ import { ScrollService } from 'src/app/service/scroll.service';
 })
 export class NavigationComponent {
   constructor(private scrollService: ScrollService) {}
-  scrollToSection(sectionId: string) {
-    const section = document.getElementById(sectionId);
-    if (!section) return;
-    else {
-      this.scrollService.scrollToSection(section);
-    }
-  }
+  navLogoUrl: string = '../assets/bar/mug.png';
+  socials = [
+    {
+      name: 'instagram',
+      url: '../assets/socials/instagram.png',
+    },
+    {
+      name: 'facebook',
+      url: '../assets/socials/facebook.png',
+    },
+  ];
+  navigate = (section: string) => {
+    this.scrollService.navigateHome(section);
+  };
 }

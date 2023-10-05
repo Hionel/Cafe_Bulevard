@@ -1,4 +1,4 @@
-import { ElementRef, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Injectable({
@@ -8,27 +8,33 @@ export class ScrollService {
   private isManualScrolling = true;
 
   constructor(private router: Router) {}
+  public navigateHome = (sectionId: string) => {
+    this.router.navigate(['/home']).then(() => {
+      const section = document.getElementById(sectionId);
+      if (!section) return;
+      else {
+        this.scrollToSection(section);
+      }
+    });
+  };
 
   public scrollToSection = (section: HTMLElement) => {
     this.isManualScrolling = false;
-    if (section.id === 'menu') {
-      section.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
-      });
-      return this.router.navigate([`${section.id}`]);
-    }
+    section.scrollIntoView({
+      behavior: 'smooth',
+      block: 'end',
+    });
 
     setTimeout(() => {
       this.isManualScrolling = true;
-    }, 750);
+    }, 1500);
 
-    return this.router.navigate([`${section.id}`]);
+    return this.router.navigate([`/home/${section.id}`]);
   };
 
   public updateUrlBasedOnManualScroll(sectionId: string) {
     if (this.isManualScrolling) {
-      this.router.navigate([sectionId]);
+      this.router.navigate([`/home/${sectionId}`]);
     }
   }
 

@@ -1,22 +1,25 @@
-<nav class="navigation__container flexRow">
-  <div
-    class="navigation__logo__container flexRow"
-    (click)="scrollToSection('/')"
-  >
-    <h1 class="navigation__logo">Cafe Bulevard</h1>
+<nav class="navigation__container">
+  <div class="navigation__logo__container flexColumn">
+    <img
+      class="navigation__logo"
+      [src]="navLogoUrl"
+      alt="No Coffe"
+      routerLink="/"
+    />
   </div>
-  <div class="navigation__controls__container flexRow">
-    <button (click)="scrollToSection('/')" class="navigation__button">
-      INFO
-    </button>
-    <button (click)="scrollToSection('menu')" class="navigation__button">
-      MENU
-    </button>
-    <button (click)="scrollToSection('gallery')" class="navigation__button">
+  <div class="navigation__controls__container flexColumn">
+    <button (click)="navigate('/')" class="navigation__button">INFO</button>
+    <button (click)="navigate('menu')" class="navigation__button">MENU</button>
+    <button (click)="navigate('gallery')" class="navigation__button">
       GALLERY
     </button>
-    <button (click)="scrollToSection('contact')" class="navigation__button">
-      CONTACT
-    </button>
+  </div>
+  <div class="navigation__socials__container flexRow">
+    <img
+      class="social__logo"
+      [src]="social.url"
+      alt="no social contact"
+      *ngFor="let social of socials"
+    />
   </div>
 </nav>

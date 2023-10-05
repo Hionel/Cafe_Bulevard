@@ -3,8 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { HeroComponent } from './components/hero/hero.component';
+import { LandingDesignComponent } from './components/landing-design/landing-design.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {
@@ -13,19 +14,25 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: HeroComponent,
+        component: LandingDesignComponent,
       },
       {
-        path: 'gallery',
-        component: GalleryComponent,
-      },
-      {
-        path: 'menu',
-        component: MenuComponent,
-      },
-      {
-        path: 'contact',
-        component: ContactComponent,
+        path: 'home',
+        component: HomeComponent,
+        children: [
+          {
+            path: '',
+            component: HeroComponent,
+          },
+          {
+            path: 'gallery',
+            component: GalleryComponent,
+          },
+          {
+            path: 'menu',
+            component: MenuComponent,
+          },
+        ],
       },
     ],
   },

@@ -1,0 +1,45 @@
+<div class="menu__category__container" *ngIf="openCategory">
+  <div class="menu__category__header__container flexRow">
+    <h2 class="menu__category__header__title">
+      {{ openCategory.categoryName }}
+    </h2>
+    <button
+      class="menu__category__header__closeBtn"
+      (click)="closeCategory()"
+      title="Close Category"
+    >
+      X
+    </button>
+  </div>
+  <div class="menu__subcategories__wrapper">
+    <div
+      class="menu__subcategory__container flexColumn"
+      *ngFor="let subcategory of openCategory.subcategories"
+    >
+      <h3 class="menu__subcategory__title">
+        {{ subcategory.subcategoryName }}
+      </h3>
+      <h5
+        class="menu__subcategory__description"
+        *ngIf="subcategory.description"
+      >
+        {{ subcategory.description }}
+      </h5>
+      <ul class="menu__subcategory__items__list flexColumn">
+        <li
+          class="menu__subcategory__item"
+          *ngFor="let item of subcategory.items"
+        >
+          <p class="product__name_and_price">
+            {{ item.productName }} - {{ item.price }} LEI
+          </p>
+          <p class="product__description">
+            {{ item.description }}
+          </p>
+          <p class="product__type">{{ item.type }}</p>
+          <p class="product__quantity">{{ item.quantity }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

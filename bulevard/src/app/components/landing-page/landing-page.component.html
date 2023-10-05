@@ -1,25 +1,25 @@
-<main class="landing__container" (scroll)="manualScroll($event)">
-  <header class="header__container">
-    <app-navigation></app-navigation>
-  </header>
-  <div class="sections__container">
-    <section
-      #heroSection
-      id="/"
-      class="hero__container section"
-      [ngStyle]="{ 'background-image': 'url(' + heroBackgroundUrl + ')' }"
+<section class="landing__page__container">
+  <div class="side__nav__toggle__container">
+    <button
+      class="side__nav__toggle__button"
+      mat-raised-button
+      (click)="drawer.toggle()"
     >
-      <app-hero></app-hero>
-    </section>
-    <section #menuSection id="menu" class="menu__container section">
-      <app-menu></app-menu>
-    </section>
-    <section #gallerySection id="gallery" class="gallery__container section">
-      <app-gallery></app-gallery>
-    </section>
-    <section #contactSection id="contact" class="contact__container section">
-      <app-contact></app-contact>
-    </section>
-    <footer class="footer__container">footer area</footer>
+      <div class="menu-icon">
+        <input class="menu-icon__cheeckbox" type="checkbox" />
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </button>
   </div>
-</main>
+  <mat-drawer-container class="landing__page__drawer" hasBackdrop="true">
+    <mat-drawer #drawer class="side__nav" mode="over" position="end">
+      <app-navigation></app-navigation>
+    </mat-drawer>
+    <mat-drawer-content class="landing__page__main__content__wrapper">
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</section>
