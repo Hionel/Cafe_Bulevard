@@ -8,8 +8,6 @@ import { ScrollService } from 'src/app/service/scroll.service';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  heroBackgroundUrl: string =
-    '../assets/oils/Hazelwood-Horner-Lewis-Pineapple.jpg';
   @ViewChild('heroSection', { static: true }) heroSectionRef?: ElementRef;
   @ViewChild('menuSection', { static: true }) menuSectionRef?: ElementRef;
   @ViewChild('gallerySection', { static: true }) gallerySectionRef?: ElementRef;

@@ -1,4 +1,12 @@
 .header__title {
   font-family: "Great vibes", cursive;
+  font-weight: 100;
   font-size: 2rem;
+  cursor: pointer;
+  animation: fadeInOut 1s ease-in;
+  animation-fill-mode: forwards;
+  transition: all 220ms ease-in-out;
+  &:hover {
+    scale: 1.1;
+  }
 }

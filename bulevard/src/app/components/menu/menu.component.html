@@ -1,9 +1,9 @@
 <section class="menu__wrapper flexColumn" *ngIf="menu">
   <div class="menu__title___container">
-    <h1 class="menu__title">The Menu</h1>
+    <h1 class="menu__title" [innerText]="menuTitle"></h1>
   </div>
   <div class="navigation__categories__container">
-    <ul class="navigation__categories__list flexRow">
+    <ul class="navigation__categories__list">
       <li
         class="navigation__categories__item"
         *ngFor="let category of menu.categories"
@@ -17,25 +17,6 @@
   <div class="menu__display__container flexColumn">
     <div class="menu__closed__display flexColumn" *ngIf="!renderedCategory">
       <p class="menu__closed__display__message">{{ closedMenuMessage }}</p>
-      <!-- <div class="menu__closed__display__providers">
-        <p class="menu__providers__title">Providers</p>
-        <ul class="menu__providers__list flexRow">
-          <li class="menu__providers__item" *ngFor="let provider of providers">
-            <img
-              [src]="provider.logo"
-              alt="no provider"
-              class="menu__provider__logo"
-            />
-          </li>
-        </ul>
-      </div> -->
-    </div>
-    <div class="menu__open__display">
-      <app-category
-        *ngIf="renderedCategory"
-        [openCategory]="renderedCategory"
-        (closedMenu)="closeCategory($event)"
-      ></app-category>
     </div>
   </div>
 </section>

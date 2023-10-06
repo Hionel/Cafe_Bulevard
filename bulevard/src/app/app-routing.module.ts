@@ -6,6 +6,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { LandingDesignComponent } from './components/landing-design/landing-design.component';
 import { HomeComponent } from './components/home/home.component';
+import { CategoryComponent } from './components/category/category.component';
 
 const routes: Routes = [
   {
@@ -25,12 +26,18 @@ const routes: Routes = [
             component: HeroComponent,
           },
           {
-            path: 'gallery',
-            component: GalleryComponent,
-          },
-          {
             path: 'menu',
             component: MenuComponent,
+            children: [
+              {
+                path: ':name',
+                component: CategoryComponent,
+              },
+            ],
+          },
+          {
+            path: 'gallery',
+            component: GalleryComponent,
           },
         ],
       },

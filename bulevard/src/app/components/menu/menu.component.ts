@@ -1,7 +1,9 @@
 import { Component, OnInit, Output } from '@angular/core';
-import { providers } from 'src/app/imageMockup/providers';
+import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 import { Category, Menu } from 'src/app/interfaces/imenu';
 import { MenuService } from 'src/app/service/menu.service';
+import { CategoryComponent } from '../category/category.component';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -11,9 +13,13 @@ export class MenuComponent implements OnInit {
   menu!: Menu;
   closedMenuMessage: string =
     'Click on a Category to Display Products and Prices';
-  providers = providers;
+  menuTitle: string = 'The Menu';
   @Output() renderedCategory: Category | undefined;
-  constructor(private menuService: MenuService) {}
+  constructor(
+    private menuService: MenuService,
+    private router: Router,
+    private dialog: MatDialog
+  ) {}
   ngOnInit(): void {
     this.menuService.getData().subscribe((data) => {
       this.menu = data;
@@ -26,10 +32,13 @@ export class MenuComponent implements OnInit {
     this.renderedCategory = this.menu.categories.find(
       (category) => category.categoryName === categoryToBeDisplayed
     );
-  };
-  closeCategory = (emitter: boolean) => {
-    if (emitter) {
-      return (this.renderedCategory = undefined);
-    } else return;
+    this.router.navigate([`/home/menu/${categoryToBeDisplayed}`]);
+    this.dialog.open(CategoryComponent, {
+      data: this.renderedCategory,
+      height: '100vh',
+      width: '100vw',
+      maxWidth: '100vw',
+      hasBackdrop: true,
+    });
   };
 }

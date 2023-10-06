@@ -3,12 +3,7 @@
     <app-home-header></app-home-header>
   </header>
   <div class="sections__container">
-    <section
-      #heroSection
-      id="/"
-      class="hero__container section"
-      [ngStyle]="{ 'background-image': 'url(' + heroBackgroundUrl + ')' }"
-    >
+    <section #heroSection id="/" class="hero__container section">
       <app-hero></app-hero>
     </section>
     <section #menuSection id="menu" class="menu__container section">
@@ -17,6 +12,8 @@
     <section #gallerySection id="gallery" class="gallery__container section">
       <app-gallery></app-gallery>
     </section>
-    <footer class="footer__container">footer area</footer>
+    <footer class="footer__container">
+      We reserve our right to choose our clients
+    </footer>
   </div>
 </main>

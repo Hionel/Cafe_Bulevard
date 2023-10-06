@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class LandingDesignComponent {
   constructor(private router: Router) {}
   landingPageBackgroundUrl: string = '../assets/oils/abstract.jpg';
-  landingPageLogoUrl: string = '../assets/bar/beans.png';
+  landingPageLogoUrl: string = '../assets/bar/landing_logo.png';
   navigateHome = () => {
     this.router.navigate(['/home']);
   };

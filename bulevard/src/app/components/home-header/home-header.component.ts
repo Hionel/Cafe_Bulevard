@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollService } from 'src/app/service/scroll.service';
 
 @Component({
   selector: 'app-home-header',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HomeHeaderComponent {
   headerTitle: string = 'Cafe Bulevard';
+  constructor(private scrollService: ScrollService) {}
+  scrollToInfo = () => {
+    const infoSection = document.getElementById('/');
+    this.scrollService.scrollToSection(infoSection!);
+  };
 }

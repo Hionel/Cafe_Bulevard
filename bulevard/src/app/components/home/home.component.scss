@@ -10,11 +10,10 @@
   transition: all 350ms ease-in-out;
   .header__container {
     z-index: 5;
-    height: 10%;
     position: fixed;
     align-items: flex-start;
-    padding-left: 5%;
-    top: 0;
+    top: 2.5%;
+    left: 2.5%;
   }
   .sections__container {
     height: 100%;
@@ -25,9 +24,7 @@
       width: 100%;
     }
     .hero__container {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+      background-color: var(--background-color);
     }
     .gallery__container {
       background-color: var(--background-color-gallery);
@@ -35,7 +32,7 @@
 
     .footer__container {
       height: fit-content;
-      background-color: rgb(168, 168, 168);
+      background-color: var(--background-color);
     }
   }
 }

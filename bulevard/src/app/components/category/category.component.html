@@ -1,9 +1,10 @@
-<div class="menu__category__container" *ngIf="openCategory">
+<section class="menu__category__container" *ngIf="openCategory">
   <div class="menu__category__header__container flexRow">
     <h2 class="menu__category__header__title">
       {{ openCategory.categoryName }}
     </h2>
     <button
+      mat-dialog-close
       class="menu__category__header__closeBtn"
       (click)="closeCategory()"
       title="Close Category"
@@ -11,7 +12,7 @@
       X
     </button>
   </div>
-  <div class="menu__subcategories__wrapper">
+  <div class="menu__subcategories__wrapper flexColumn">
     <div
       class="menu__subcategory__container flexColumn"
       *ngFor="let subcategory of openCategory.subcategories"
@@ -42,4 +43,4 @@
       </ul>
     </div>
   </div>
-</div>
+</section>

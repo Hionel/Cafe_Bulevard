@@ -1,6 +1,8 @@
 .menu__category__container {
   text-align: center;
   height: 100%;
+  width: 100%;
+  background-color: var(--background-color);
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -9,12 +11,14 @@
     display: none;
   }
   .menu__category__header__container {
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 1rem 5%;
     position: sticky;
     top: 0;
     background-color: var(--background-color);
     .menu__category__header__title {
       font-family: "Great Vibes", cursive;
+      color: var(--text-color);
       font-size: 3rem;
       font-weight: bolder;
     }
@@ -35,19 +39,14 @@
   }
 
   .menu__subcategories__wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15%;
+    height: fit-content;
+    gap: 1rem;
+    color: var(--text-color);
+    padding: 1rem 0rem;
     .menu__subcategory__container {
-      width: 50%;
-      justify-content: center;
-      align-items: center;
+      padding: 1rem 0rem;
+      width: 65%;
       gap: 1.5rem;
-      padding: 1rem;
-      height: fit-content;
       border-top: 0.5px solid white;
       .menu__subcategory__title {
         font-size: 1.5rem;

@@ -46,4 +46,20 @@ export class ScrollService {
       clientRect.top <= windowHeight - (75 * windowHeight) / 100
     );
   }
+
+  //   private scrollToSectionHook() {
+  //     this.router.events.subscribe(event => {
+  //         if (event instanceof NavigationEnd) {
+  //             const tree = this.router.parseUrl(this.router.url);
+  //             if (tree.fragment) {
+  //                 const element = document.querySelector('#' + tree.fragment);
+  //                 if (element) {
+  //                     setTimeout(() => {
+  //                         element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
+  //                     }, 500 );
+  //                 }
+  //             }
+  //          }
+  //     });
+  // }
 }

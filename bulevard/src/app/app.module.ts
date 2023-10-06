@@ -14,9 +14,12 @@ import { MenuComponent } from './components/menu/menu.component';
 import { CategoryComponent } from './components/category/category.component';
 import { HomeComponent } from './components/home/home.component';
 import { LandingDesignComponent } from './components/landing-design/landing-design.component';
+import { HomeHeaderComponent } from './components/home-header/home-header.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { HomeHeaderComponent } from './components/home-header/home-header.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CarouselModule } from '@coreui/angular';
 
 const modules = [
   BrowserModule,
@@ -24,9 +27,10 @@ const modules = [
   AppRoutingModule,
   BrowserAnimationsModule,
   HttpClientModule,
+  CarouselModule,
 ];
 
-const materialModules = [MatSidenavModule];
+const materialModules = [MatSidenavModule, MatGridListModule, MatDialogModule];
 const components = [
   AppComponent,
   LandingPageComponent,

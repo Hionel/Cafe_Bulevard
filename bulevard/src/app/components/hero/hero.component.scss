@@ -1,72 +1,64 @@
 .hero__wrapper {
   height: 100%;
-  display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  // grid-template-rows: repeat(5, 1fr);
-  padding: 2.5rem 0.5rem 2.5rem 0.5rem;
-  backdrop-filter: blur(5px);
-  .hero__opening__container,
-  .hero__invitation__container {
-    grid-row: span 3;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 1rem 0rem 0rem 1rem;
-  }
-  .hero__opening__container {
-    grid-column: span 2;
-    .opening__title {
-      font-size: 5rem;
-    }
-    .opening__intro,
-    .opening__emphasis {
-      font-size: 2rem;
-    }
-  }
-  .hero__invitation__container {
-    grid-column: span 1;
-    padding-top: 2.5rem;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: fadeInOut 1s ease-in-out;
 
-    .invitation__title {
-      font-size: 2rem;
-    }
-    .invitation__list {
-      list-style: none;
-
-      .invitation__list__item {
-        font-size: 1.5rem;
-        &:nth-of-type(1) {
-          padding-left: 4rem;
-        }
-        &:nth-of-type(2) {
-          padding-left: 6rem;
-        }
-        &:nth-of-type(3) {
-          padding-left: 8rem;
-        }
-        &:nth-of-type(4) {
-          padding-left: 10rem;
-        }
-      }
-    }
-  }
   .hero__closing__container {
-    gap: 1rem;
-    grid-column: span 3;
-    grid-row: span 2;
-    justify-content: end;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px) !important;
+    padding: 1.5rem;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    gap: 0.5rem;
     .program__title {
       font-size: 2.5rem;
     }
     .program__days,
     .program__text,
     .program__address {
+      font-weight: 100;
       font-size: 1.5rem;
     }
-
+    .location__number {
+      font-style: italic;
+      letter-spacing: 1.5px;
+    }
     .closing__text {
       padding-top: 1rem;
       letter-spacing: 1.5px;
       font-style: italic;
+    }
+
+    .program__title,
+    .program__days,
+    .program__text,
+    .location__number,
+    .program__address,
+    .closing__text {
+      animation: fadeInOut 1s ease-in;
+      animation-fill-mode: forwards;
+    }
+  }
+  .hero__buttons {
+    display: flex;
+    justify-content: center;
+    .hero__button {
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      border: none;
+      border-radius: 50%;
+      background-color: #fff;
+      cursor: pointer;
+    }
+    .hero__button.active {
+      background-color: rgb(0, 0, 0);
     }
   }
 }

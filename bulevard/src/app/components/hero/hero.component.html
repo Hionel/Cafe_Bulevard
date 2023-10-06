@@ -1,40 +1,22 @@
-<section class="hero__wrapper">
-  <!-- <div class="hero__opening__container flexColumn">
-    <h1 class="opening__title" [innerText]="heroData.opening.title"></h1>
-    <sub>
-      <p class="opening__intro" [innerText]="heroData.opening.introduction"></p>
-      <p class="opening__emphasis" [innerText]="heroData.opening.emphasis"></p>
-    </sub>
-  </div>
-  <div class="hero__invitation__container flexColumn">
-    <h2
-      class="invitation__title"
-      [innerText]="heroData.invitation.invitationTitle"
-    ></h2>
-    <ul class="invitation__list">
-      <li
-        class="invitation__list__item"
-        [innerText]="heroData.invitation.firstActivity"
-      ></li>
-      <li
-        class="invitation__list__item"
-        [innerText]="heroData.invitation.secondActivity"
-      ></li>
-      <li
-        class="invitation__list__item"
-        [innerText]="heroData.invitation.thirdActivity"
-      ></li>
-      <li
-        class="invitation__list__item"
-        [innerText]="heroData.invitation.invitationClosing"
-      ></li>
-    </ul>
-  </div> -->
+<!-- <section
+  class="hero__wrapper flexColumn"
+  [ngStyle]="{ 'background-image': 'url(' + currentBackground + ')' }"
+>
   <div class="hero__closing__container flexColumn">
+    <div class="hero__buttons">
+      <button
+        *ngFor="let background of backgroundImages; let i = index"
+        class="hero__button"
+        [class.active]="i === currentBackgroundIndex"
+        (click)="changeBackground(i)"
+      ></button>
+    </div>
     <h3 class="program__title" [innerText]="heroData.closing.programTitle"></h3>
     <p class="program__days" [innerText]="heroData.closing.programDays"></p>
     <p class="program__text" [innerText]="heroData.closing.programText"></p>
     <p class="program__address" [innerText]="heroData.closing.address"></p>
+    <p class="location__number" [innerText]="heroData.closing.number"></p>
+
     <p class="closing__text" [innerText]="heroData.closing.text"></p>
   </div>
-</section>
+</section> -->
