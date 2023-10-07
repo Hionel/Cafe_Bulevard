@@ -5,11 +5,27 @@
     </c-carousel-item>
   </c-carousel-inner>
   <div class="carousel__controls__container flexRow">
-    <c-carousel-control caption="Previous" direction="prev">
-      <svg [cIcon]="icons.cilArrowLeft" width="25" class="arrow"></svg>
+    <c-carousel-control
+      caption="Previous"
+      direction="prev"
+      class="carousel__control"
+    >
+      <button class="left">
+        <div class="left-top"></div>
+        <div class="left-bottom"></div>
+      </button>
+
     </c-carousel-control>
-    <c-carousel-control caption="Next" direction="next">
-      <svg [cIcon]="icons.cilArrowRight" width="25" class="arrow"></svg>
+    <c-carousel-control
+      caption="Next"
+      direction="next"
+      class="carousel__control"
+    >
+      <button class="arrow">
+        <div class="arrow-top"></div>
+        <div class="arrow-bottom"></div>
+      </button>
+
     </c-carousel-control>
   </div>
 </c-carousel>
