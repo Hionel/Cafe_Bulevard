@@ -3,10 +3,10 @@
     <button
       class="side__nav__toggle__button"
       mat-raised-button
-      (click)="drawer.toggle()"
+      (click)="onNavToggle()"
     >
       <div class="menu-icon">
-        <input class="menu-icon__cheeckbox" type="checkbox" />
+        <input class="menu-icon__cheeckbox" type="checkbox" [(ngModel)]="isNavigationOpen"/>
         <div>
           <span></span>
           <span></span>
@@ -15,7 +15,7 @@
     </button>
   </div>
   <mat-drawer-container class="landing__page__drawer" hasBackdrop="true">
-    <mat-drawer #drawer class="side__nav" mode="over" position="end">
+    <mat-drawer #drawer class="side__nav" mode="over" position="end" [(opened)]="isNavigationOpen">
       <app-navigation></app-navigation>
     </mat-drawer>
     <mat-drawer-content class="landing__page__main__content__wrapper">

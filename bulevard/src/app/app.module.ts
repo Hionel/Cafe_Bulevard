@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
+
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { ImageTrackComponent } from './components/image-track/image-track.component';
@@ -22,6 +23,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CarouselModule } from '@coreui/angular';
 import { IconModule, IconSetService } from '@coreui/icons-angular';
+import { FormsModule } from '@angular/forms';
 
 const modules = [
   BrowserModule,
@@ -29,6 +31,7 @@ const modules = [
   AppRoutingModule,
   BrowserAnimationsModule,
   HttpClientModule,
+  FormsModule,
   CarouselModule,
   IconModule,
 ];
