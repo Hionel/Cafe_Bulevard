@@ -1,22 +1,27 @@
-<section class="menu__wrapper flexColumn" *ngIf="menu">
-  <div class="menu__title___container">
+<section class="menu__wrapper" *ngIf="menu">
+  <header class="menu__title___container flexRow">
     <h1 class="menu__title" [innerText]="menuTitle"></h1>
-  </div>
+  </header>
   <div class="navigation__categories__container">
     <ul class="navigation__categories__list">
       <li
-        class="navigation__categories__item"
+        class="navigation__categories__item flexColumn"
         *ngFor="let category of menu.categories"
+        (click)="openCategory(category.categoryName)"
       >
-        <button class="navigation__item__button" (click)="openCategory($event)">
+        <img
+          [src]="category.backgroundUrl"
+          alt="No Beverage"
+          class="navigation__categories__item__background"
+          loading="lazy"
+        />
+        <button class="navigation__item__button">
           {{ category.categoryName }}
         </button>
       </li>
     </ul>
   </div>
-  <div class="menu__display__container flexColumn">
-    <div class="menu__closed__display flexColumn" *ngIf="!renderedCategory">
-      <p class="menu__closed__display__message">{{ closedMenuMessage }}</p>
-    </div>
+  <div class="menu__tip__container flexColumn">
+    <p class="menu__tip__message" [innerText]="tipMenuMessage"></p>
   </div>
 </section>

@@ -1,7 +1,10 @@
 <section class="gallery__container">
-  <div class="gallery__information__container flexColumn">
+  <div class="gallery__information__container flexRow">
     <h2 class="gallery__title" [innerText]="galleryTitle"></h2>
-    <p class="gallery__text" [innerText]="galleryText"></p>
   </div>
-  <app-image-track></app-image-track>
+  <div class="gallery__showcase__container">1</div>
+  <div class="gallery__track__container"></div>
+  <div class="gallery__tip__container flexColumn">
+    <p class="gallery__tip__message" [innerText]="galleryTipText"></p>
+  </div>
 </section>

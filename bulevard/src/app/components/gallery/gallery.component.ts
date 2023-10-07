@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class GalleryComponent {
   galleryTitle: string = 'The Gallery';
-  galleryText: string = 'Click and drag to see some of our drinks';
+  galleryTipText: string = 'Click and drag to see some of our drinks';
 }

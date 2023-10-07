@@ -14,6 +14,7 @@ export interface Subcategory {
 
 export interface Category {
   categoryName: string;
+  backgroundUrl:string;
   subcategories: Subcategory[];
 }
 

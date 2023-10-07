@@ -11,8 +11,7 @@ import { CategoryComponent } from '../category/category.component';
 })
 export class MenuComponent implements OnInit {
   menu!: Menu;
-  closedMenuMessage: string =
-    'Click on a Category to Display Products and Prices';
+  tipMenuMessage: string = 'Click on a Category to Display Products and Prices';
   menuTitle: string = 'The Menu';
   @Output() renderedCategory: Category | undefined;
   constructor(
@@ -26,9 +25,8 @@ export class MenuComponent implements OnInit {
     });
   }
 
-  openCategory = (event: Event) => {
-    const button = event.target as HTMLElement;
-    const categoryToBeDisplayed = button.innerText;
+  openCategory = (category: string) => {
+    const categoryToBeDisplayed = category;
     this.renderedCategory = this.menu.categories.find(
       (category) => category.categoryName === categoryToBeDisplayed
     );
