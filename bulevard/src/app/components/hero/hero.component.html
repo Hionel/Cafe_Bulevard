@@ -1,16 +1,8 @@
-<!-- <section
-  class="hero__wrapper flexColumn"
-  [ngStyle]="{ 'background-image': 'url(' + currentBackground + ')' }"
->
+<section class="hero__wrapper flexColumn">
+  <div class="hero__carousel__container">
+    <app-hero-carousel></app-hero-carousel>
+  </div>
   <div class="hero__closing__container flexColumn">
-    <div class="hero__buttons">
-      <button
-        *ngFor="let background of backgroundImages; let i = index"
-        class="hero__button"
-        [class.active]="i === currentBackgroundIndex"
-        (click)="changeBackground(i)"
-      ></button>
-    </div>
     <h3 class="program__title" [innerText]="heroData.closing.programTitle"></h3>
     <p class="program__days" [innerText]="heroData.closing.programDays"></p>
     <p class="program__text" [innerText]="heroData.closing.programText"></p>
@@ -19,4 +11,4 @@
 
     <p class="closing__text" [innerText]="heroData.closing.text"></p>
   </div>
-</section> -->
+</section>

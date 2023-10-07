@@ -15,11 +15,13 @@ import { CategoryComponent } from './components/category/category.component';
 import { HomeComponent } from './components/home/home.component';
 import { LandingDesignComponent } from './components/landing-design/landing-design.component';
 import { HomeHeaderComponent } from './components/home-header/home-header.component';
+import { HeroCarouselComponent } from './components/hero-carousel/hero-carousel.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CarouselModule } from '@coreui/angular';
+import { IconModule, IconSetService } from '@coreui/icons-angular';
 
 const modules = [
   BrowserModule,
@@ -28,6 +30,7 @@ const modules = [
   BrowserAnimationsModule,
   HttpClientModule,
   CarouselModule,
+  IconModule,
 ];
 
 const materialModules = [MatSidenavModule, MatGridListModule, MatDialogModule];
@@ -43,11 +46,12 @@ const components = [
   CategoryComponent,
   HomeComponent,
   HomeHeaderComponent,
+  HeroCarouselComponent,
 ];
 @NgModule({
   declarations: [...components],
   imports: [...modules, materialModules],
-  providers: [],
+  providers: [IconSetService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

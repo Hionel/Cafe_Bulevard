@@ -1,20 +1,17 @@
 .hero__wrapper {
   height: 100%;
-  justify-content: flex-end;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   position: relative;
-  overflow: hidden;
-  transition: fadeInOut 1s ease-in-out;
-
+  // overflow: hidden;
+  .hero__carousel__container {
+    width: 100%;
+    height: 100%;
+  }
   .hero__closing__container {
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px) !important;
-    padding: 1.5rem;
+    position: absolute;
+    bottom: 5%;
+    // backdrop-filter: blur(5px);
     justify-content: flex-end;
     height: 100%;
-    width: 100%;
     gap: 0.5rem;
     .program__title {
       font-size: 2.5rem;
@@ -43,22 +40,6 @@
     .closing__text {
       animation: fadeInOut 1s ease-in;
       animation-fill-mode: forwards;
-    }
-  }
-  .hero__buttons {
-    display: flex;
-    justify-content: center;
-    .hero__button {
-      width: 10px;
-      height: 10px;
-      margin: 0 5px;
-      border: none;
-      border-radius: 50%;
-      background-color: #fff;
-      cursor: pointer;
-    }
-    .hero__button.active {
-      background-color: rgb(0, 0, 0);
     }
   }
 }
