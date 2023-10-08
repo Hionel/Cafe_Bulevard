@@ -1,5 +1,5 @@
 .header__title {
-  font-family: "Great vibes", cursive;
+  font-family: var(--logo-font);
   font-weight: 100;
   font-size: 2rem;
   cursor: pointer;
@@ -10,4 +10,3 @@
     scale: 1.1;
   }
 }
-

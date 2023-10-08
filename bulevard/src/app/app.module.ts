@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
@@ -22,8 +22,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CarouselModule } from '@coreui/angular';
-import { IconModule, IconSetService } from '@coreui/icons-angular';
-import { FormsModule } from '@angular/forms';
 
 const modules = [
   BrowserModule,
@@ -33,7 +31,6 @@ const modules = [
   HttpClientModule,
   FormsModule,
   CarouselModule,
-  IconModule,
 ];
 
 const materialModules = [MatSidenavModule, MatGridListModule, MatDialogModule];
@@ -54,7 +51,7 @@ const components = [
 @NgModule({
   declarations: [...components],
   imports: [...modules, materialModules],
-  providers: [IconSetService],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

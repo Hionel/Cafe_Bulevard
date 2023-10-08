@@ -6,7 +6,7 @@
     align-items: flex-end;
     .menu__title {
       user-select: none;
-      font-family: "Great Vibes", cursive;
+      font-family: var(--title-font);
       font-size: 6rem;
       font-weight: 100;
       letter-spacing: 0.25px;
@@ -61,14 +61,14 @@
         .navigation__item__button {
           cursor: pointer;
           z-index: 5;
-          font-family: "Great Vibes", cursive;
+          font-family: var(--text-font);
           font-size: 1.5rem;
           color: var(--text-color);
           background: transparent;
           border: none;
           border-radius: 15px;
           transition: all 220ms ease-in-out;
-          // backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
         }
       }
     }

@@ -37,6 +37,9 @@ $bulevard-theme: mat.define-light-theme(
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Great+Vibes&family=Ropa+Sans:ital@0;1&display=swap");
 
 :root {
+  --logo-font: "Great vibes", cursive;
+  --title-font: "Alex brush", cursive;
+  --text-font: "Ropa Sans", cursive;
   --background-color: rgb(25, 25, 25);
   --background-color-navigation: rgba(25, 25, 25, 0.75);
   --text-color: rgb(255, 255, 255);
@@ -78,6 +81,9 @@ body {
 @keyframes fadeInOut {
   0% {
     opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
