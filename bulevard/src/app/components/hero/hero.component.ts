@@ -31,5 +31,8 @@ export class HeroComponent {
     },
   ];
 
-  constructor() {}
+  constructor() {
+    // console.log('backgroundImages inside hero component log:');
+    // console.log(this.backgroundImages);
+  }
 }

@@ -21,15 +21,12 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CarouselComponent } from './components/carousel/carousel.component';
 
-import { GALLERY_CONFIG, GalleryConfig, GalleryModule } from 'ng-gallery';
-
 const modules = [
   BrowserModule,
   BrowserAnimationsModule,
   AppRoutingModule,
   HttpClientModule,
   FormsModule,
-  GalleryModule,
 ];
 
 const materialModules = [MatSidenavModule, MatDialogModule];
@@ -50,15 +47,7 @@ const components = [
 @NgModule({
   declarations: [...components],
   imports: [...modules, materialModules],
-  providers: [
-    {
-      provide: GALLERY_CONFIG,
-      useValue: {
-        autoHeight: true,
-        imageSize: 'cover',
-      } as GalleryConfig,
-    },
-  ],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -9,7 +9,10 @@ import { images } from 'src/app/imageMockup/images';
 })
 export class GalleryComponent implements OnInit {
   galleryTitle: string = 'The Gallery';
-  images = images;
+  gallerImages = [...images];
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // console.log('images inside gallery component log:');
+    // console.log(this.images);
+  }
 }

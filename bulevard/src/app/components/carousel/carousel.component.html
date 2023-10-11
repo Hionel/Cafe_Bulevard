@@ -1,17 +1,42 @@
 <section class="carousel__container">
-  <div class="carousel__showcase__container">
-    <gallery
-      [items]="images!"
-      [loadingStrategy]="'preload'"
-      [nav]="false"
-      [thumb]="false"
-      [autoHeight]="false"
-      [imageSize]="'cover'"
-      [counter]="false"
-      [loop]="true"
-      (indexChange)="changeIndex($event)"
-      class="carousel__showcase"
-    ></gallery>
+  <div #carouselContainer class="carousel__showcase__container flexRow">
+    <div
+      #carouselItem
+      class="carousel__showcase__item"
+      *ngFor="let item of carouselData; let index = index"
+      [ngStyle]="{ transform: 'translateX(' + index * 100 + '%)' }"
+      [ngClass]="{ hidden: isHidden(index) }"
+    >
+      <img
+        [src]="item.src"
+        alt="No dring"
+        class="carousel__showcase__item__image"
+      />
+    </div>
+
+    <nav
+      class="carousel__showcase__controls__container flexRow"
+      *ngIf="showControls"
+    >
+      <button
+        class="carousel__showcase__button prevButton"
+        (click)="slideCarousel('left')"
+      >
+        <div class="arrow left">
+          <div class="arrow-top left"></div>
+          <div class="arrow-bottom left"></div>
+        </div>
+      </button>
+      <button
+        class="carousel__showcase__button nextButton"
+        (click)="slideCarousel('right')"
+      >
+        <div class="arrow">
+          <div class="arrow-top"></div>
+          <div class="arrow-bottom"></div>
+        </div>
+      </button>
+    </nav>
   </div>
   <div class="carousel__thumbnails__container flexRow" *ngIf="showThumbnails">
     <div
