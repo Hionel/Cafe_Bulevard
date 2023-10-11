@@ -9,7 +9,7 @@ import { images } from 'src/app/imageMockup/images';
 })
 export class GalleryComponent implements OnInit {
   galleryTitle: string = 'The Gallery';
-  galleryTipText: string = 'Click and drag to see some of our drinks';
+  images = images;
 
   ngOnInit(): void {}
 }

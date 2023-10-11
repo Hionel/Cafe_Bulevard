@@ -1,0 +1,30 @@
+<section class="carousel__container">
+  <div class="carousel__showcase__container">
+    <gallery
+      [items]="images!"
+      [loadingStrategy]="'preload'"
+      [nav]="false"
+      [thumb]="false"
+      [autoHeight]="false"
+      [imageSize]="'cover'"
+      [counter]="false"
+      [loop]="true"
+      (indexChange)="changeIndex($event)"
+      class="carousel__showcase"
+    ></gallery>
+  </div>
+  <div class="carousel__thumbnails__container flexRow" *ngIf="showThumbnails">
+    <div
+      class="carousel__thumbnail"
+      *ngFor="let item of carouselData; let i = index"
+      [ngClass]="i === currentIndex ? 'active' : 'inactive'"
+    >
+      <img
+        (click)="changeTab(i)"
+        [src]="item.src"
+        alt="No drinks"
+        class="carousel__thumbnail__image"
+      />
+    </div>
+  </div>
+</section>

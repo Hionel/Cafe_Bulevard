@@ -1,6 +1,9 @@
 <section class="hero__wrapper flexColumn">
   <div class="hero__carousel__container">
-    <app-hero-carousel></app-hero-carousel>
+    <app-carousel
+      [carouselData]="backgroundImages"
+      [showThumbnails]="false"
+    ></app-carousel>
   </div>
   <div class="hero__closing__container flexColumn">
     <h3 class="program__title" [innerText]="heroData.closing.programTitle"></h3>

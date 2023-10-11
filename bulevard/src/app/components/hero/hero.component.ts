@@ -5,7 +5,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss'],
 })
-export class HeroComponent implements OnInit, OnDestroy {
+export class HeroComponent {
   heroData = {
     closing: {
       programTitle: 'OPEN HOURS',
@@ -16,58 +16,20 @@ export class HeroComponent implements OnInit, OnDestroy {
       text: `Come and Toast the Passing Years in our Cozy Cafè or Scroll Down for More`,
     },
   };
-  backgroundImages: string[] = [
-    '../assets/bar/bumbuBottle.jpeg',
-    '../assets/bar/shelfSpirits.jpeg',
-    '../assets/bar/negroni1.jpeg',
-    '../assets/bar/bar1.jpeg',
-    '../assets/bar/bar2.jpeg',
+  backgroundImages: any[] = [
+    {
+      src: '../assets/bar/bumbuBottle.jpeg',
+    },
+    {
+      src: '../assets/bar/shelfSpirits.jpeg',
+    },
+    {
+      src: '../assets/bar/bar1.jpeg',
+    },
+    {
+      src: '../assets/bar/bar2.jpeg',
+    },
   ];
 
-  currentBackgroundIndex: number = 0;
-  currentBackground: string = this.backgroundImages[0];
-  // interval: any;
-
   constructor() {}
-
-  ngOnInit(): void {}
-
-  ngOnDestroy(): void {
-    //   this.clearBackgroundInterval();
-  }
-  // changeBackground(index: number) {
-  //   if (index !== this.currentBackgroundIndex) {
-  //     this.animateBackgroundTransition(index);
-  //   }
-  // }
-
-  // private animateBackgroundTransition(newIndex: number) {
-  //   const isDirectionLeftToRight = newIndex > this.currentBackgroundIndex;
-
-  //   // Apply the enter animation class
-  //   this.currentBackgroundIndex = newIndex;
-  //   this.currentBackground = this.backgroundImages[newIndex];
-  //   this.clearBackgroundInterval(); // Clear the interval to prevent automatic changes during animation
-
-  //   // After a short delay, apply the exit animation class
-  //   setTimeout(() => {
-  //     // Clear the exit animation class and restart the interval
-  //     this.clearBackgroundInterval();
-  //     this.startBackgroundInterval();
-  //   }, 1000); // Delay for the enter animation duration
-  // }
-
-  // private startBackgroundInterval() {
-  //   this.interval = setInterval(() => {
-  //     const nextIndex =
-  //       (this.currentBackgroundIndex + 1) % this.backgroundImages.length;
-  //     this.changeBackground(nextIndex);
-  //   }, 10000); // Change background every 10 seconds (10000 milliseconds).
-  // }
-
-  // private clearBackgroundInterval() {
-  //   if (this.interval) {
-  //     clearInterval(this.interval);
-  //   }
-  // }
 }

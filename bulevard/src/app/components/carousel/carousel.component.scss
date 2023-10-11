@@ -1,0 +1,45 @@
+.carousel__container {
+  height: 100%;
+  position: relative;
+  .carousel__showcase__container {
+    height: 100%;
+    width: 100%;
+    .carousel__showcase {
+      height: 100%;
+    }
+  }
+  .carousel__thumbnails__container {
+    position: absolute;
+    z-index: 5;
+    height: 20%;
+    width: 100%;
+    bottom: 0;
+    gap: 1rem;
+    padding: 1rem;
+    .carousel__thumbnail {
+      cursor: pointer;
+      position: relative;
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+      border: 0.5px solid black;
+      overflow: hidden;
+      animation: fadeInOut 1s ease-in-out;
+      transition: all 220ms ease-in-out;
+      .carousel__thumbnail__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.active {
+  filter: grayscale(0);
+  border-color: var(--text-color) !important;
+}
+
+.inactive {
+  filter: grayscale(1);
+}

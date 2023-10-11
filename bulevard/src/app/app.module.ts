@@ -16,24 +16,23 @@ import { CategoryComponent } from './components/category/category.component';
 import { HomeComponent } from './components/home/home.component';
 import { LandingDesignComponent } from './components/landing-design/landing-design.component';
 import { HomeHeaderComponent } from './components/home-header/home-header.component';
-import { HeroCarouselComponent } from './components/hero-carousel/hero-carousel.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
-import { CarouselModule } from '@coreui/angular';
+import { CarouselComponent } from './components/carousel/carousel.component';
+
+import { GALLERY_CONFIG, GalleryConfig, GalleryModule } from 'ng-gallery';
 
 const modules = [
   BrowserModule,
   BrowserAnimationsModule,
   AppRoutingModule,
-  BrowserAnimationsModule,
   HttpClientModule,
   FormsModule,
-  CarouselModule,
+  GalleryModule,
 ];
 
-const materialModules = [MatSidenavModule, MatGridListModule, MatDialogModule];
+const materialModules = [MatSidenavModule, MatDialogModule];
 const components = [
   AppComponent,
   LandingPageComponent,
@@ -46,12 +45,20 @@ const components = [
   CategoryComponent,
   HomeComponent,
   HomeHeaderComponent,
-  HeroCarouselComponent,
+  CarouselComponent,
 ];
 @NgModule({
   declarations: [...components],
   imports: [...modules, materialModules],
-  providers: [],
+  providers: [
+    {
+      provide: GALLERY_CONFIG,
+      useValue: {
+        autoHeight: true,
+        imageSize: 'cover',
+      } as GalleryConfig,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
