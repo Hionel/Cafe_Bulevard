@@ -1,5 +1,6 @@
 .hero__wrapper {
   height: 100%;
+  text-align: center;
   position: relative;
   overflow: hidden;
   .hero__carousel__container {
@@ -40,6 +41,30 @@
     .closing__text {
       animation: fadeInOut 1s ease-in;
       animation-fill-mode: forwards;
+    }
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .hero__wrapper {
+    .hero__closing__container {
+      bottom: 4%;
+      padding: 0rem 2.5rem;
+      .program__title {
+        font-size: 2rem;
+      }
+      .program__days,
+      .program__text,
+      .program__address {
+        font-size: 1rem;
+      }
+      .location__number {
+        letter-spacing: 0.5px;
+      }
+      .closing__text {
+        padding-top: 0.5rem;
+        letter-spacing: 0.5px;
+      }
     }
   }
 }

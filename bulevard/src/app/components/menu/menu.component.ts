@@ -11,7 +11,6 @@ import { CategoryComponent } from '../category/category.component';
 })
 export class MenuComponent implements OnInit {
   menu!: Menu;
-  tipMenuMessage: string = 'Click on a Category to Display Products and Prices';
   menuTitle: string = 'The Menu';
   @Output() renderedCategory: Category | undefined;
   constructor(
@@ -30,7 +29,7 @@ export class MenuComponent implements OnInit {
     this.renderedCategory = this.menu.categories.find(
       (category) => category.categoryName === categoryToBeDisplayed
     );
-    this.router.navigate([`/home/menu/${categoryToBeDisplayed}`]);
+    this.router.navigate([`/menu/${categoryToBeDisplayed.toLowerCase()}`]);
     this.dialog.open(CategoryComponent, {
       data: this.renderedCategory,
       height: '100vh',

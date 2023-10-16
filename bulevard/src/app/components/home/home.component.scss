@@ -9,9 +9,10 @@
   position: relative;
   transition: all 350ms ease-in-out;
   .header__container {
-    z-index: 5;
+    z-index: 10;
     position: fixed;
     align-items: flex-start;
+    padding: 0.5rem;
     top: 2.5%;
     left: 2.5%;
   }

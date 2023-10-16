@@ -18,6 +18,6 @@ export class CategoryComponent {
     this.openCategory = data;
   }
   closeCategory = () => {
-    this.router.navigate(['/home/menu']);
+    this.router.navigate(['/menu']);
   };
 }

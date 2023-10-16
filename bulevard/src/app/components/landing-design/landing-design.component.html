@@ -1,4 +1,5 @@
 <section
+  #landingDesignPage
   class="landing__page__logo__container flexColumn"
   [ngStyle]="{
     'background-image': 'url(' + landingPageBackgroundUrl + ')'
@@ -11,8 +12,6 @@
       alt="Bulevard"
       (click)="navigateHome()"
     />
-    <a class="landing__page__title" (click)="navigateHome()"
-      ><span> Cafe Bulevard </span></a
-    >
+    <h1 class="landing__page__title" (click)="navigateHome()">Cafe Bulevard</h1>
   </div>
 </section>

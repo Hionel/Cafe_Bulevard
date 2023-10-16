@@ -8,15 +8,6 @@ export class ScrollService {
   private isManualScrolling = true;
 
   constructor(private router: Router) {}
-  public navigateHome = (sectionId: string) => {
-    this.router.navigate(['/home']).then(() => {
-      const section = document.getElementById(sectionId);
-      if (!section) return;
-      else {
-        this.scrollToSection(section);
-      }
-    });
-  };
 
   public scrollToSection = (section: HTMLElement) => {
     this.isManualScrolling = false;
@@ -27,14 +18,14 @@ export class ScrollService {
 
     setTimeout(() => {
       this.isManualScrolling = true;
-    }, 1500);
+    }, 500);
 
-    return this.router.navigate([`/home/${section.id}`]);
+    return this.router.navigate([`/${section.id}`]);
   };
 
   public updateUrlBasedOnManualScroll(sectionId: string) {
     if (this.isManualScrolling) {
-      this.router.navigate([`/home/${sectionId}`]);
+      this.router.navigate([`/${sectionId}`]);
     }
   }
 

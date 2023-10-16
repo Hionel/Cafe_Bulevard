@@ -1,16 +1,37 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  EventEmitter,
+  Output,
+  ViewChild,
+} from '@angular/core';
+import * as Hammer from 'hammerjs';
 
 @Component({
   selector: 'app-landing-design',
   templateUrl: './landing-design.component.html',
   styleUrls: ['./landing-design.component.scss'],
 })
-export class LandingDesignComponent {
-  constructor(private router: Router) {}
+export class LandingDesignComponent implements AfterViewInit {
+  @Output() emitLandingDesignPageState = new EventEmitter<boolean>();
+  @ViewChild('landingDesignPage') landingDesignPage?: ElementRef;
+  constructor() {}
+  ngAfterViewInit(): void {
+    const hammer = new Hammer.Manager(this.landingDesignPage?.nativeElement);
+    hammer.add(
+      new Hammer.Swipe({
+        direction: Hammer.DIRECTION_VERTICAL,
+        threshold: 10,
+      })
+    );
+    hammer.on('swipeup', () => {
+      this.emitLandingDesignPageState.emit(false);
+    });
+  }
   landingPageBackgroundUrl: string = '../assets/oils/abstract.jpg';
   landingPageLogoUrl: string = '../assets/bar/landing_logo.png';
   navigateHome = () => {
-    this.router.navigate(['/home']);
+    this.emitLandingDesignPageState.emit(false);
   };
 }

@@ -7,7 +7,6 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
-import { ImageTrackComponent } from './components/image-track/image-track.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
@@ -34,7 +33,6 @@ const components = [
   AppComponent,
   LandingPageComponent,
   LandingDesignComponent,
-  ImageTrackComponent,
   NavigationComponent,
   HeroComponent,
   GalleryComponent,

@@ -15,10 +15,6 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: LandingDesignComponent,
-      },
-      {
-        path: 'home',
         component: HomeComponent,
         children: [
           {

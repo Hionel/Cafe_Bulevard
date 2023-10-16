@@ -48,7 +48,7 @@
       height: 100%;
       width: 100%;
       border-radius: 10px;
-      border: 0.5px solid white;
+      border: 1px solid white;
       transition: all 220ms ease-in-out;
       animation: fadeInOut 1s ease-in-out;
       .carousel__thumbnail__image {
@@ -170,5 +170,27 @@
 
   &:active {
     transform: translateX(-50%) translateY(-50%) scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .carousel__container {
+    .carousel__showcase__container {
+      .carousel__showcase__controls__container {
+        .carousel__showcase__button {
+          display: none;
+        }
+      }
+    }
+    .carousel__thumbnails__container {
+      height: 15%;
+      .carousel__thumbnail {
+        .carousel__thumbnail__image {
+          &:active {
+            scale: 1.1;
+          }
+        }
+      }
+    }
   }
 }

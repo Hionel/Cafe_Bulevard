@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { ScrollService } from 'src/app/service/scroll.service';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -7,7 +6,10 @@ import { ScrollService } from 'src/app/service/scroll.service';
   styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent {
-  constructor(private scrollService: ScrollService) {}
+  constructor() {}
+  @Output() emitNavigationOption = new EventEmitter<string>();
+  @Output() emitLandingDesignPageVisibility = new EventEmitter<boolean>();
+
   navLogoUrl: string = '../assets/bar/mug.png';
   socials = [
     {
@@ -20,6 +22,9 @@ export class NavigationComponent {
     },
   ];
   navigate = (section: string) => {
-    this.scrollService.navigateHome(section);
+    this.emitNavigationOption.emit(section);
+  };
+  openLanding = () => {
+    this.emitLandingDesignPageVisibility.emit(true);
   };
 }
