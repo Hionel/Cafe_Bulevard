@@ -90,6 +90,7 @@
         grid-template-columns: repeat(2, 1fr);
         .navigation__categories__item {
           filter: grayscale(0);
+          grid-row: span 2;
 
           &:active {
             border: 0.5px solid black;
@@ -102,6 +103,7 @@
           }
           &:last-child {
             grid-column: span 2;
+            grid-row: span 1;
           }
         }
       }

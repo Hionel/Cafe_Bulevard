@@ -1,0 +1,15 @@
+<section class="language__selector__container flexRow" *ngIf="flagsData">
+  <div
+    class="language__selector__item__container flexColumn"
+    *ngFor="let flag of flagsData"
+  >
+    <img
+      [src]="flag.flagSrc"
+      alt="No Borders"
+      [ngClass]="
+        flag.languageCode === selectedLanguage ? 'active__flage' : 'inactive'
+      "
+      (click)="changeLanguage(flag.languageCode)"
+    />
+  </div>
+</section>

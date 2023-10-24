@@ -1,0 +1,24 @@
+.language__selector__container {
+  height: fit-content;
+  overflow: hidden;
+  padding: 1rem 0rem;
+  justify-content: space-evenly;
+  img {
+    cursor: pointer;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    object-fit: contain;
+    transition: all 220ms ease-in-out;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+.active__flag {
+  filter: grayscale(0);
+}
+
+.inactive {
+  filter: grayscale(1);
+}

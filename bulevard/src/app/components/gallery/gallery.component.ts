@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { images } from 'src/app/imageMockup/images';
+import { DataService } from 'src/app/service/data.service';
 
 @Component({
   selector: 'app-gallery',
@@ -10,9 +11,12 @@ import { images } from 'src/app/imageMockup/images';
 export class GalleryComponent implements OnInit {
   galleryTitle: string = 'The Gallery';
   gallerImages = [...images];
-
+  constructor(private dataService: DataService) {}
   ngOnInit(): void {
-    // console.log('images inside gallery component log:');
-    // console.log(this.images);
+    this.dataService.languageCode$.subscribe((code) => {
+      code === 'en'
+        ? (this.galleryTitle = 'The Gallery')
+        : (this.galleryTitle = 'Galeria');
+    });
   }
 }

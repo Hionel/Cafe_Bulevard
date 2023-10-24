@@ -1,0 +1,752 @@
+{
+  "categories": [
+    {
+      "categoryName": "Hot Drinks",
+      "backgroundUrl": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80",
+      "subcategories": [
+        {
+          "subcategoryName": "Coffee",
+          "description": "Julius Meinl freshly grounded coffee beans and ness",
+          "items": [
+            {
+              "productName": "Espresso",
+              "quantity": "50ml",
+              "price": 7
+            },
+            {
+              "productName": "Caffé Lungo",
+              "quantity": "100ml",
+              "price": 7
+            },
+            {
+              "productName": "Cappuccino",
+              "quantity": "200ml",
+              "price": 10
+            },
+            {
+              "productName": "Caffé Latte",
+              "quantity": "200ml",
+              "price": 10
+            },
+            {
+              "productName": "Decaf Espresso",
+              "quantity": "50ml",
+              "price": 8
+            },
+            {
+              "productName": "Decaf Café Lungo",
+              "quantity": "100ml",
+              "price": 8
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Tea",
+          "description": "Julius Meinl tea: Black Assam Special, Green Pure Classic, Green with Lemon, Asian Spirit Ginger Lemon, Wild Strawberry, Wild Cherry, White Peach, Fruit Symphony, Apple Cassis, Mint, Vanilla, Camomile",
+          "items": [
+            {
+              "productName": "Tea",
+              "quantity": "200ml",
+              "price": 7
+            },
+            {
+              "productName": "Tea Latte",
+              "quantity": "150ml",
+              "price": 10
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Hot chocolate",
+          "description": "White - Bahia | Black - Moro Ciok",
+          "items": [
+            {
+              "productName": "Hot White Chocolate",
+              "quantity": "200ml",
+              "price": 15
+            },
+            {
+              "productName": "Hot Black Chocolate",
+              "quantity": "200ml",
+              "price": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Cold Drinks",
+      "backgroundUrl": "https://images.unsplash.com/photo-1656936611703-a1ede070073c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=4000&q=80",
+      "subcategories": [
+        {
+          "subcategoryName": "Cold coffee",
+          "items": [
+            {
+              "productName": "Cold brew",
+              "quantity": "250ml",
+              "price": 16
+            },
+            {
+              "productName": "Dalgona coffee",
+              "quantity": "200ml",
+              "price": 15
+            },
+            {
+              "productName": "Frappe",
+              "quantity": "250ml",
+              "price": 15
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Carbonated Beverages",
+          "items": [
+            {
+              "productName": "Coca Cola",
+              "quantity": "250ml",
+              "price": 8
+            },
+            {
+              "productName": "Coca Cola Light",
+              "quantity": "250ml",
+              "price": 8
+            },
+            {
+              "productName": "Coca Cola Zero",
+              "quantity": "250ml",
+              "price": 8
+            },
+            {
+              "productName": "Sprite",
+              "quantity": "250ml",
+              "price": 8
+            },
+            {
+              "productName": "Fanta Orange",
+              "quantity": "250ml",
+              "price": 8
+            },
+            {
+              "productName": "Schwepps Tonic",
+              "quantity": "250ml",
+              "price": 9
+            },
+            {
+              "productName": "Schwepps Bitter Lemon",
+              "quantity": "250ml",
+              "price": 9
+            },
+            {
+              "productName": "Schwepps Mandarin",
+              "quantity": "250ml",
+              "price": 9
+            },
+            {
+              "productName": "Schwepps Pink",
+              "quantity": "250ml",
+              "price": 9
+            },
+            {
+              "productName": "Pepsi Vintage",
+              "quantity": "250ml",
+              "price": 10
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Fruit Juices and Fruit-Based Drinks",
+          "items": [
+            {
+              "productName": "Fresh Orange,Grapefruit or Mixed",
+              "quantity": "250ml",
+              "price": 15
+            },
+            {
+              "productName": "Lemonade",
+              "quantity": "400ml",
+              "price": 15
+            },
+            {
+              "productName": "Fuzetea Lemon",
+              "quantity": "250ml",
+              "price": 10
+            },
+            {
+              "productName": "Fuzetea Peaches",
+              "quantity": "250ml",
+              "price": 10
+            },
+            {
+              "productName": "Cappy Oranges",
+              "quantity": "250ml",
+              "price": 10
+            },
+            {
+              "productName": "Cappy Red Oranges",
+              "quantity": "250ml",
+              "price": 10
+            },
+            {
+              "productName": "Cappy Pears",
+              "quantity": "250ml",
+              "price": 10
+            },
+            {
+              "productName": "Cappy Peaches",
+              "quantity": "250ml",
+              "price": 10
+            },
+            {
+              "productName": "Cappy Cherries",
+              "quantity": "250ml",
+              "price": 10
+            },
+            {
+              "productName": "Santal Oranges",
+              "quantity": "250ml",
+              "price": 7
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Water",
+          "description": "Aqua, Borsec and Dorna: Any 330ml or 500ml water bottles 5 Lei and 750ml water bottles 10 Lei"
+        },
+        {
+          "subcategoryName": "Energy Drinks",
+          "items": [
+            {
+              "productName": "Red Bull",
+              "quantity": "250ml",
+              "price": 10
+            },
+            {
+              "productName": "Red Bull Sugar Free",
+              "quantity": "250ml",
+              "price": 10
+            },
+            {
+              "productName": "Red Bull Watermelon",
+              "quantity": "250ml",
+              "price": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Beers",
+      "backgroundUrl": "https://images.unsplash.com/photo-1608270586620-248524c67de9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=5070&q=80",
+      "subcategories": [
+        {
+          "subcategoryName": "Draft",
+          "description": "Served only during spring/summer. Pints may be frosted",
+          "items": [
+            {
+              "productName": "Ursus Draft Pint",
+              "quantity": "400ml",
+              "price": 8
+            },
+            {
+              "productName": "Ursus Draft Glass",
+              "quantity": "300ml",
+              "price": 7
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Bottled",
+          "items": [
+            {
+              "productName": "Azuga",
+              "quantity": "500ml",
+              "price": 16
+            },
+            {
+              "productName": "Peroni",
+              "quantity": "330ml",
+              "price": 10
+            },
+            {
+              "productName": "Peroni",
+              "quantity": "500ml",
+              "price": 10
+            },
+            {
+              "productName": "Peroni Capri",
+              "quantity": "330ml",
+              "price": 12
+            },
+            {
+              "productName": "Kozel",
+              "quantity": "330ml",
+              "price": 8
+            },
+            {
+              "productName": "Kozel Dark",
+              "quantity": "330ml",
+              "price": 8
+            },
+            {
+              "productName": "Ursus",
+              "quantity": "330ml",
+              "price": 8
+            },
+            {
+              "productName": "Ursus",
+              "quantity": "500ml",
+              "price": 8
+            },
+            {
+              "productName": "Ursus Black",
+              "quantity": "330ml",
+              "price": 8
+            },
+            {
+              "productName": "Ursus Retro",
+              "quantity": "330ml",
+              "price": 8
+            },
+            {
+              "productName": "Ursus Unfiltered",
+              "quantity": "330ml",
+              "price": 12
+            },
+            {
+              "productName": "Ursus IPA",
+              "quantity": "330ml",
+              "price": 12
+            },
+            {
+              "productName": "Ursus Pilsner",
+              "quantity": "330ml",
+              "price": 12
+            },
+            {
+              "productName": "Salitos",
+              "quantity": "350ml",
+              "price": 15
+            },
+            {
+              "productName": "Corona",
+              "quantity": "350ml",
+              "price": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Wines",
+      "backgroundUrl": "https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2768&q=80",
+      "subcategories": [
+        {
+          "subcategoryName": "White",
+          "items": [
+            {
+              "productName": "Sole Chardonnay Recaș",
+              "type": "Dry",
+              "quantity": "750ml",
+              "price": 100
+            },
+            {
+              "productName": "Moșia De la Tohani Fetească Albă",
+              "type": "Semi-Dry",
+              "quantity": "750ml",
+              "price": 50
+            },
+            {
+              "productName": "Castel Huniade Recaș Sauvignion Blanc",
+              "type": "Semi-Dry",
+              "quantity": "750ml",
+              "price": 50
+            },
+            {
+              "productName": "Dry Muscat Jidvei",
+              "type": "Semi-Dry",
+              "quantity": "750ml",
+              "price": 50
+            },
+            {
+              "productName": "Bag in Box Reacș Fetească Regală",
+              "type": "Semi-Dry",
+              "quantity": "1000ml",
+              "price": 30
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Red",
+          "items": [
+            {
+              "productName": "Rara Neagra De Purcari",
+              "type": "Dry",
+              "quantity": "750ml",
+              "price": 70
+            },
+            {
+              "productName": "Moșia De la Tohani Fetească Neagră",
+              "type": "Semi-Dry",
+              "quantity": "750ml",
+              "price": 50
+            },
+            {
+              "productName": "Castel Huniade Recaș Fetească Regală",
+              "type": "Semi-Dry",
+              "quantity": "750ml",
+              "price": 50
+            },
+            {
+              "productName": "Bag in Box Recaș Merlot/Cabernet Sauvignion",
+              "type": "Semi-Dry",
+              "quantity": "1000ml",
+              "price": 30
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Rose",
+          "items": [
+            {
+              "productName": "Muse Nights Recaș",
+              "type": "Semi-Dry",
+              "quantity": "750ml",
+              "price": 100
+            },
+            {
+              "productName": "Moșia De la Tohani Rose",
+              "type": "Semi-Dry",
+              "quantity": "750ml",
+              "price": 50
+            },
+            {
+              "productName": "Castel Huniade Recaș Rose",
+              "type": "Semi-Dry",
+              "quantity": "750ml",
+              "price": 50
+            },
+            {
+              "productName": "Grigorescu Jidvei Rose",
+              "type": "Semi-Dry",
+              "quantity": "750ml",
+              "price": 50
+            },
+            {
+              "productName": "Bag in Box Recaș Rose",
+              "type": "Semi-Sweet",
+              "quantity": "1000ml",
+              "price": 30
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Sparkling Wine or Prosecco",
+          "items": [
+            {
+              "productName": "Sparkling Wine Bottega Millesimato",
+              "type": "Dry/Brut",
+              "quantity": "750ml",
+              "price": 90
+            },
+            {
+              "productName": "Prosecco",
+              "quantity": "100ml",
+              "price": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Spirits",
+      "backgroundUrl": "https://images.unsplash.com/photo-1616512050184-a59742ece650?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=5000&q=80",
+      "subcategories": [
+        {
+          "subcategoryName": "Gin",
+          "items": [
+            {
+              "productName": "McQueen Violet Fog",
+              "quantity": "100ml",
+              "price": "50"
+            },
+            {
+              "productName": "Bombay Saphire",
+              "quantity": "100ml",
+              "price": 25
+            },
+            {
+              "productName": "Beefeter",
+              "quantity": "100ml",
+              "price": 18
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Rum",
+          "items": [
+            {
+              "productName": "Bumbu The Original",
+              "quantity": "100ml",
+              "price": 50
+            },
+            {
+              "productName": "Havana Club 7 years Black Rum",
+              "quantity": "100ml",
+              "price": 35
+            },
+            {
+              "productName": "Havana Club 3 years White Rum",
+              "quantity": "100ml",
+              "price": 100
+            },
+            {
+              "productName": "Captain Morgan Spiced Rum",
+              "quantity": "100ml",
+              "price": 20
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Cognac",
+          "items": [
+            {
+              "productName": "Courvoisier V.S.O.P",
+              "quantity": "100ml",
+              "price": 60
+            },
+            {
+              "productName": "Courvoisier V.S.",
+              "quantity": "100ml",
+              "price": 50
+            },
+            {
+              "productName": "Brâncoveanu X.O.",
+              "quantity": "100ml",
+              "price": 60
+            },
+            {
+              "productName": "Brâncoveanu V.S.",
+              "quantity": "100ml",
+              "price": 22
+            },
+            {
+              "productName": "Vinars Jidvei",
+              "quantity": "100ml",
+              "price": 22
+            },
+            {
+              "productName": "Alexandrion 7",
+              "quantity": "100ml",
+              "price": 16
+            },
+            {
+              "productName": "Alexandrion 5",
+              "quantity": "100ml",
+              "price": 14
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Whiskey",
+          "items": [
+            {
+              "productName": "Johnnie Walker BL.",
+              "quantity": "100ml",
+              "price": 40
+            },
+            {
+              "productName": "Chivas Regal",
+              "quantity": "100ml",
+              "price": 40
+            },
+            {
+              "productName": "Jack Daniels",
+              "quantity": "100ml",
+              "price": 30
+            },
+            {
+              "productName": "Jameson",
+              "quantity": "100ml",
+              "price": 20
+            },
+            {
+              "productName": "J&B",
+              "quantity": "100ml",
+              "price": 20
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Vodka",
+          "items": [
+            {
+              "productName": "Absolut Blue",
+              "quantity": "100ml",
+              "price": 18
+            },
+            {
+              "productName": "Finlandia",
+              "quantity": "100ml",
+              "price": 18
+            },
+            {
+              "productName": "Stalinskaya",
+              "quantity": "100ml",
+              "price": 12
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Vermouth",
+          "items": [
+            {
+              "productName": "Martini Rosso",
+              "quantity": "100ml",
+              "price": 12
+            },
+            {
+              "productName": "Martini Bianco",
+              "quantity": "100ml",
+              "price": 12
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Liquers, Aperitifs and Digestifs",
+          "items": [
+            {
+              "productName": "Amaretto Disaronno",
+              "quantity": "100ml",
+              "price": 25
+            },
+            {
+              "productName": "Jagermister",
+              "quantity": "100ml",
+              "price": 20
+            },
+            {
+              "productName": "Campari",
+              "quantity": "100ml",
+              "price": 20
+            },
+            {
+              "productName": "Aperol",
+              "quantity": "100ml",
+              "price": 20
+            },
+            {
+              "productName": "Kahlua",
+              "quantity": "100ml",
+              "price": 20
+            },
+            {
+              "productName": "Bayley's",
+              "quantity": "100ml",
+              "price": 25
+            },
+            {
+              "productName": "Bumbu Cream",
+              "quantity": "100ml",
+              "price": "35"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Cocktails",
+      "backgroundUrl": "https://images.unsplash.com/photo-1550426735-c33c7ce414ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2443&q=80",
+      "subcategories": [
+        {
+          "subcategoryName": "Gin-based",
+          "description": "Price varies based on the choice of gin",
+          "items": [
+            {
+              "productName": "Negroni",
+              "productDescription": "3 equal parts of 50ml Bombay Gin, Martini Vermouth Rosso and Campari",
+              "quantity": "150ml",
+              "price": "28.5"
+            },
+            {
+              "productName": "Gin & Tonic Classic",
+              "productDescription": "Bombay Gin and Schweppes Tonic with Lemon garnish",
+              "price": "21.5"
+            },
+            {
+              "productName": "Gin & Tonic Rosemary Grapefruit",
+              "productDescription": "Bombay Gin and Schweppes Tonic with Grapefruit garnish",
+              "price": "21.5"
+            },
+            {
+              "productName": "Gin & Tonic Fruit Symphony",
+              "productDescription": "Bombay Gin and Schweppes Tonic with wild berries garnish",
+              "price": "21.5"
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Rum-based",
+          "description": "Price varies based on the choice of rum",
+          "items": [
+            {
+              "productName": "Cuba Libre",
+              "description": "50 ml of Bumbu Rum topped with classic Coca Cola and lemon garnish",
+              "price": "32"
+            },
+            {
+              "productName": "Lazy Sprite Mojito",
+              "description": "White Havana Rum choice",
+              "price": "18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Snacks",
+      "backgroundUrl": "https://images.unsplash.com/photo-1610137512859-aa919f651a05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=5070&q=80",
+      "subcategories": [
+        {
+          "subcategoryName": "Chio",
+          "items": [
+            {
+              "productName": "Stickletti Cheese",
+              "quantity": "80g",
+              "price": "7"
+            },
+            {
+              "productName": "Stickletti Potates",
+              "quantity": "80g",
+              "price": "7"
+            },
+            {
+              "productName": "Stickletti Salt",
+              "quantity": "80g",
+              "price": "7"
+            }
+          ]
+        },
+        {
+          "subcategoryName": "Nutline",
+          "items": [
+            {
+              "productName": "Nuts with Salt",
+              "quantity": "50g",
+              "price": "4"
+            },
+            {
+              "productName": "White Salted Sunflower Seeds",
+              "quantity": "40g",
+              "price": "5"
+            },
+            {
+              "productName": "Black Salted Sunflower Seeds",
+              "quantity": "40g",
+              "price": "3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

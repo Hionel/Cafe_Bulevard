@@ -1,12 +1,12 @@
 {
   "categories": [
     {
-      "categoryName": "Hot Drinks",
-      "backgroundUrl":"https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80",
+      "categoryName": "Băuturi Calde",
+      "backgroundUrl": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80",
       "subcategories": [
         {
-          "subcategoryName": "Coffee",
-          "description": "Julius Meinl freshly grounded coffee beans and ness",
+          "subcategoryName": "Cafea",
+          "description": "Boabe de cafea măcinate proaspăt Julius Meinl și ness",
           "items": [
             {
               "productName": "Espresso",
@@ -29,44 +29,44 @@
               "price": 10
             },
             {
-              "productName": "Decaf Espresso",
+              "productName": "Espresso Decafeinizat",
               "quantity": "50ml",
               "price": 8
             },
             {
-              "productName": "Decaf Café Lungo",
+              "productName": "Caffé Lungo Decafeinizat",
               "quantity": "100ml",
               "price": 8
             }
           ]
         },
         {
-          "subcategoryName": "Tea",
-          "description": "Julius Meinl tea: Black Assam Special, Green Pure Classic, Green with Lemon, Asian Spirit Ginger Lemon, Wild Strawberry, Wild Cherry, White Peach, Fruit Symphony, Apple Cassis, Mint, Vanilla, Camomile",
+          "subcategoryName": "Ceai",
+          "description": "Ceai Julius Meinl: Negru Assam Special, Verde Pure Classic, Verde cu Lămâie, Spirit Asiatic Ghimbir Lămâie, Cireșe Sălbatice, Vișine Sălbatice, Piersică Albă, Simfonia Fructelor, Afine Cassis, Mătreață, Vanilie, Mușețel",
           "items": [
             {
-              "productName": "Tea",
+              "productName": "Ceai",
               "quantity": "200ml",
               "price": 7
             },
             {
-              "productName": "Tea Latte",
+              "productName": "Ceai Latte",
               "quantity": "150ml",
               "price": 10
             }
           ]
         },
         {
-          "subcategoryName": "Hot chocolate",
-          "description": "White - Bahia | Black - Moro Ciok",
+          "subcategoryName": "Ciocolată Caldă",
+          "description": "Ciocolată Albă - Bahia | Ciocolată Neagră - Moro Ciok",
           "items": [
             {
-              "productName": "Hot White Chocolate",
+              "productName": "Ciocolată Albă Caldă",
               "quantity": "200ml",
               "price": 15
             },
             {
-              "productName": "Hot Black Chocolate",
+              "productName": "Ciocolată Neagră Caldă",
               "quantity": "200ml",
               "price": 15
             }
@@ -75,11 +75,11 @@
       ]
     },
     {
-      "categoryName": "Cold Drinks",
-      "backgroundUrl":"https://images.unsplash.com/photo-1656936611703-a1ede070073c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=4000&q=80",
+      "categoryName": "Băuturi Reci",
+      "backgroundUrl": "https://images.unsplash.com/photo-1656936611703-a1ede070073c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=4000&q=80",
       "subcategories": [
         {
-          "subcategoryName": "Cold coffee",
+          "subcategoryName": "Cafea Rece",
           "items": [
             {
               "productName": "Cold brew",
@@ -87,7 +87,7 @@
               "price": 16
             },
             {
-              "productName": "Dalgona coffee",
+              "productName": "Cafea Dalgona",
               "quantity": "200ml",
               "price": 15
             },
@@ -99,7 +99,7 @@
           ]
         },
         {
-          "subcategoryName": "Carbonated Beverages",
+          "subcategoryName": "Băuturi Carbogazoase",
           "items": [
             {
               "productName": "Coca Cola",
@@ -122,27 +122,27 @@
               "price": 8
             },
             {
-              "productName": "Fanta Orange",
+              "productName": "Fanta Portocală",
               "quantity": "250ml",
               "price": 8
             },
             {
-              "productName": "Schwepps Tonic",
+              "productName": "Schweppes Tonic ",
               "quantity": "250ml",
               "price": 9
             },
             {
-              "productName": "Schwepps Bitter Lemon",
+              "productName": "Schweppes Bitter",
               "quantity": "250ml",
               "price": 9
             },
             {
-              "productName": "Schwepps Mandarin",
+              "productName": "Schweppes Mandarin",
               "quantity": "250ml",
               "price": 9
             },
             {
-              "productName": "Schwepps Pink",
+              "productName": "Schweppes Pink",
               "quantity": "250ml",
               "price": 9
             },
@@ -154,66 +154,66 @@
           ]
         },
         {
-          "subcategoryName": "Fruit Juices and Fruit-Based Drinks",
+          "subcategoryName": "Suc de Fructe și Băuturi pe Bază de Fructe",
           "items": [
             {
-              "productName": "Fresh Orange,Grapefruit or Mixed",
+              "productName": "Portocale, Grapefruit sau Mixte Proaspete",
               "quantity": "250ml",
               "price": 15
             },
             {
-              "productName": "Lemonade",
+              "productName": "Limonadă",
               "quantity": "400ml",
               "price": 15
             },
             {
-              "productName": "Fuzetea Lemon",
+              "productName": "Fuzetea Lămâie",
               "quantity": "250ml",
               "price": 10
             },
             {
-              "productName": "Fuzetea Peaches",
+              "productName": "Fuzetea Piersici",
               "quantity": "250ml",
               "price": 10
             },
             {
-              "productName": "Cappy Oranges",
+              "productName": "Cappy Portocale",
               "quantity": "250ml",
               "price": 10
             },
             {
-              "productName": "Cappy Red Oranges",
+              "productName": "Cappy Vișine",
               "quantity": "250ml",
               "price": 10
             },
             {
-              "productName": "Cappy Pears",
+              "productName": "Cappy Pere",
               "quantity": "250ml",
               "price": 10
             },
             {
-              "productName": "Cappy Peaches",
+              "productName": "Cappy Piersici",
               "quantity": "250ml",
               "price": 10
             },
             {
-              "productName": "Cappy Cherries",
+              "productName": "Cappy Cireșe",
               "quantity": "250ml",
               "price": 10
             },
             {
-              "productName": "Santal Oranges",
+              "productName": "Santal Portocale",
               "quantity": "250ml",
               "price": 7
             }
           ]
         },
         {
-          "subcategoryName": "Water",
-          "description": "Aqua, Borsec and Dorna: Any 330ml or 500ml water bottles 5 Lei and 750ml water bottles 10 Lei"
+          "subcategoryName": "Apă",
+          "description": "Aqua, Borsec și Dorna: Orice sticlă de apă de 330ml sau 500ml - 5 Lei și sticlele de 750ml - 10 Lei"
         },
         {
-          "subcategoryName": "Energy Drinks",
+          "subcategoryName": "Băuturi Energetice",
           "items": [
             {
               "productName": "Red Bull",
@@ -221,12 +221,12 @@
               "price": 10
             },
             {
-              "productName": "Red Bull Sugar Free",
+              "productName": "Red Bull Fără Zahăr",
               "quantity": "250ml",
               "price": 10
             },
             {
-              "productName": "Red Bull Watermelon",
+              "productName": "Red Bull Pepene Verde",
               "quantity": "250ml",
               "price": 10
             }
@@ -235,27 +235,27 @@
       ]
     },
     {
-      "categoryName": "Beers",
-      "backgroundUrl":"https://images.unsplash.com/photo-1608270586620-248524c67de9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=5070&q=80",
+      "categoryName": "Bere",
+      "backgroundUrl": "https://images.unsplash.com/photo-1608270586620-248524c67de9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=5070&q=80",
       "subcategories": [
         {
-          "subcategoryName": "Draft",
-          "description": "Served only during spring/summer. Pints may be frosted",
+          "subcategoryName": "La Draft",
+          "description": "Servite doar în timpul primăverii/varii. Se pot îngheța paharele",
           "items": [
             {
-              "productName": "Ursus Draft Pint",
+              "productName": "Pahar Ursus La Draft",
               "quantity": "400ml",
               "price": 8
             },
             {
-              "productName": "Ursus Draft Glass",
+              "productName": "Pahar Ursus La Draft",
               "quantity": "300ml",
               "price": 7
             }
           ]
         },
         {
-          "subcategoryName": "Bottled",
+          "subcategoryName": "La Sticlă",
           "items": [
             {
               "productName": "Azuga",
@@ -308,7 +308,7 @@
               "price": 8
             },
             {
-              "productName": "Ursus Unfiltered",
+              "productName": "Ursus Nelitrațiată",
               "quantity": "330ml",
               "price": 12
             },
@@ -337,114 +337,114 @@
       ]
     },
     {
-      "categoryName": "Wines",
-      "backgroundUrl":"https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2768&q=80",
+      "categoryName": "Vinuri",
+      "backgroundUrl": "https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pbnZ5fHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2768&q=80",
       "subcategories": [
         {
-          "subcategoryName": "White",
+          "subcategoryName": "Albe",
           "items": [
             {
               "productName": "Sole Chardonnay Recaș",
-              "type": "Dry",
+              "type": "Uscat",
               "quantity": "750ml",
               "price": 100
             },
             {
               "productName": "Moșia De la Tohani Fetească Albă",
-              "type": "Semi-Dry",
+              "type": "Demi-Uscat",
               "quantity": "750ml",
               "price": 50
             },
             {
               "productName": "Castel Huniade Recaș Sauvignion Blanc",
-              "type": "Semi-Dry",
+              "type": "Demi-Uscat",
               "quantity": "750ml",
               "price": 50
             },
             {
-              "productName": "Dry Muscat Jidvei",
-              "type": "Semi-Dry",
+              "productName": "Muscat Uscat Jidvei",
+              "type": "Demi-Uscat",
               "quantity": "750ml",
               "price": 50
             },
             {
-              "productName": "Bag in Box Reacș Fetească Regală",
-              "type": "Semi-Dry",
+              "productName": "Bag-in-Box Reacș Fetească Regală",
+              "type": "Demi-Uscat",
               "quantity": "1000ml",
               "price": 30
             }
           ]
         },
         {
-          "subcategoryName": "Red",
+          "subcategoryName": "Roșii",
           "items": [
             {
-              "productName": "Rara Neagra De Purcari",
-              "type": "Dry",
+              "productName": "Rara Neagră De la Purcari",
+              "type": "Uscat",
               "quantity": "750ml",
               "price": 70
             },
             {
               "productName": "Moșia De la Tohani Fetească Neagră",
-              "type": "Semi-Dry",
+              "type": "Demi-Uscat",
               "quantity": "750ml",
               "price": 50
             },
             {
               "productName": "Castel Huniade Recaș Fetească Regală",
-              "type": "Semi-Dry",
+              "type": "Demi-Uscat",
               "quantity": "750ml",
               "price": 50
             },
             {
-              "productName": "Bag in Box Recaș Merlot/Cabernet Sauvignion",
-              "type": "Semi-Dry",
+              "productName": "Bag-in-Box Reacș Merlot/Cabernet Sauvignon",
+              "type": "Demi-Uscat",
               "quantity": "1000ml",
               "price": 30
             }
           ]
         },
         {
-          "subcategoryName": "Rose",
+          "subcategoryName": "Roze",
           "items": [
             {
-              "productName": "Muse Nights Recaș",
-              "type": "Semi-Dry",
+              "productName": "Nopți de Muzeu Roze Recaș",
+              "type": "Demi-Uscat",
               "quantity": "750ml",
               "price": 100
             },
             {
-              "productName": "Moșia De la Tohani Rose",
-              "type": "Semi-Dry",
+              "productName": "Moșia De la Tohani Roze",
+              "type": "Demi-Uscat",
               "quantity": "750ml",
               "price": 50
             },
             {
-              "productName": "Castel Huniade Recaș Rose",
-              "type": "Semi-Dry",
+              "productName": "Castel Huniade Recaș Roze",
+              "type": "Demi-Uscat",
               "quantity": "750ml",
               "price": 50
             },
             {
-              "productName": "Grigorescu Jidvei Rose",
-              "type": "Semi-Dry",
+              "productName": "Roze Grigorescu Jidvei",
+              "type": "Demi-Uscat",
               "quantity": "750ml",
               "price": 50
             },
             {
-              "productName": "Bag in Box Recaș Rose",
-              "type": "Semi-Sweet",
+              "productName": "Bag-in-Box Reacș Roze",
+              "type": "Dulce",
               "quantity": "1000ml",
               "price": 30
             }
           ]
         },
         {
-          "subcategoryName": "Sparkling Wine or Prosecco",
+          "subcategoryName": "Vin Spumant sau Prosecco",
           "items": [
             {
-              "productName": "Sparkling Wine Bottega Millesimato",
-              "type": "Dry/Brut",
+              "productName": "Vin Spumant Bottega Millesimato",
+              "type": "Uscat/Brut",
               "quantity": "750ml",
               "price": 90
             },
@@ -458,8 +458,8 @@
       ]
     },
     {
-      "categoryName": "Spirits",
-      "backgroundUrl":"https://images.unsplash.com/photo-1616512050184-a59742ece650?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=5000&q=80",
+      "categoryName": "Spirtoase",
+      "backgroundUrl": "https://images.unsplash.com/photo-1616512050184-a59742ece650?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=5000&q=80",
       "subcategories": [
         {
           "subcategoryName": "Gin",
@@ -507,15 +507,15 @@
           ]
         },
         {
-          "subcategoryName": "Cognac",
+          "subcategoryName": "Coniac",
           "items": [
             {
-              "productName": "Courviusuer V.S.O.P",
+              "productName": "Courvoisier V.S.O.P",
               "quantity": "100ml",
               "price": 60
             },
             {
-              "productName": "Courviusuer V.S.",
+              "productName": "Courvoisier V.S.",
               "quantity": "100ml",
               "price": 50
             },
@@ -533,66 +533,46 @@
               "productName": "Vinars Jidvei",
               "quantity": "100ml",
               "price": 22
-            },
-            {
-              "productName": "Alexandrion 7",
-              "quantity": "100ml",
-              "price": 16
-            },
-            {
-              "productName": "Alexandrion 5",
-              "quantity": "100ml",
-              "price": 14
             }
           ]
         },
         {
-          "subcategoryName": "Whiskey",
+          "subcategoryName": "Whisky",
           "items": [
             {
-              "productName": "Johnnie Walker BL.",
+              "productName": "Chivas Regal 12 years",
               "quantity": "100ml",
               "price": 40
             },
             {
-              "productName": "Chivas Regal",
+              "productName": "Jack Daniel's Old No.7",
               "quantity": "100ml",
-              "price": 40
-            },
-            {
-              "productName": "Jack Daniels",
-              "quantity": "100ml",
-              "price": 30
+              "price": 35
             },
             {
               "productName": "Jameson",
               "quantity": "100ml",
-              "price": 20
-            },
-            {
-              "productName": "J&B",
-              "quantity": "100ml",
-              "price": 20
+              "price": 30
             }
           ]
         },
         {
-          "subcategoryName": "Vodka",
+          "subcategoryName": "Vodcă",
           "items": [
+            {
+              "productName": "Beluga",
+              "quantity": "100ml",
+              "price": 45
+            },
             {
               "productName": "Absolut Blue",
               "quantity": "100ml",
-              "price": 18
+              "price": 20
             },
             {
-              "productName": "Finlandia",
+              "productName": "Smirnoff",
               "quantity": "100ml",
               "price": 18
-            },
-            {
-              "productName": "Stalinskaya",
-              "quantity": "100ml",
-              "price": 12
             }
           ]
         },
@@ -611,8 +591,9 @@
             }
           ]
         },
+
         {
-          "subcategoryName": "Liquers, Aperitifs and Digestifs",
+          "subcategoryName": "Lichior, Aperitiv sau Digestiv",
           "items": [
             {
               "productName": "Amaretto Disaronno",
@@ -654,48 +635,48 @@
       ]
     },
     {
-      "categoryName": "Cocktails",
-      "backgroundUrl":"https://images.unsplash.com/photo-1550426735-c33c7ce414ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2443&q=80",
+      "categoryName": "Cocktail-uri",
+      "backgroundUrl": "https://images.unsplash.com/photo-1550426735-c33c7ce414ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2443&q=80",
       "subcategories": [
         {
-          "subcategoryName": "Gin-based",
-          "description": "Price varies based on the choice of gin",
+          "subcategoryName": "Pe bază de Gin",
+          "description": "Prețul variază în funcție de alegerea gin-ului",
           "items": [
             {
               "productName": "Negroni",
-              "productDescription": "3 equal parts of 50ml Bombay Gin, Martini Vermouth Rosso and Campari",
+              "productDescription": "3 părți egale de 50ml Bombay Gin, Martini Vermouth Rosso și Campari",
               "quantity": "150ml",
               "price": "28.5"
             },
             {
-              "productName": "Gin & Tonic Classic",
-              "productDescription": "Bombay Gin and Schweppes Tonic with Lemon garnish",
+              "productName": "Gin & Tonic Clasic",
+              "productDescription": "Bombay Gin și Schweppes Tonic cu decor de lămâie",
               "price": "21.5"
             },
             {
-              "productName": "Gin & Tonic Rosemary Grapefruit",
-              "productDescription": "Bombay Gin and Schweppes Tonic with Grapefruit garnish",
+              "productName": "Gin & Tonic Rozmarin Grapefruit",
+              "productDescription": "Bombay Gin și Schweppes Tonic cu decor de grapefruit",
               "price": "21.5"
             },
             {
-              "productName": "Gin & Tonic Fruit Symphony",
-              "productDescription": "Bombay Gin and Schweppes Tonic with wild berries garnish",
+              "productName": "Gin & Tonic Simfonia Fructelor",
+              "productDescription": "Bombay Gin și Schweppes Tonic cu decor de fructe de pădure",
               "price": "21.5"
             }
           ]
         },
         {
-          "subcategoryName": "Rum-based",
-          "description": "Price varies based on the choice of rum",
+          "subcategoryName": "Pe bază de Rom",
+          "description": "Prețul variază în funcție de alegerea rom-ului",
           "items": [
             {
               "productName": "Cuba Libre",
-              "description": "50 ml of Bumbu Rum topped with classic Coca Cola and lemon garnish",
+              "description": "50 ml Bumbu Rum cu coca-cola clasică și decor de lămâie",
               "price": "32"
             },
             {
               "productName": "Lazy Sprite Mojito",
-              "description": "White Havana Rum choice",
+              "description": "Alegere de White Havana Rum",
               "price": "18"
             }
           ]
@@ -703,24 +684,24 @@
       ]
     },
     {
-      "categoryName": "Snacks",
-      "backgroundUrl":"https://images.unsplash.com/photo-1610137512859-aa919f651a05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=5070&q=80",
+      "categoryName": "Gustări",
+      "backgroundUrl": "https://images.unsplash.com/photo-1610137512859-aa919f651a05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=5070&q=80",
       "subcategories": [
         {
           "subcategoryName": "Chio",
           "items": [
             {
-              "productName": "Stickletti Cheese",
+              "productName": "Stickletti Cu Brânză",
               "quantity": "80g",
               "price": "7"
             },
             {
-              "productName": "Stickletti Potates",
+              "productName": "Stickletti Cartofi",
               "quantity": "80g",
               "price": "7"
             },
             {
-              "productName": "Stickletti Salt",
+              "productName": "Stickletti Sare",
               "quantity": "80g",
               "price": "7"
             }
@@ -730,17 +711,17 @@
           "subcategoryName": "Nutline",
           "items": [
             {
-              "productName": "Nuts with Salt",
+              "productName": "Nuci cu Sare",
               "quantity": "50g",
               "price": "4"
             },
             {
-              "productName": "White Salted Sunflower Seeds",
+              "productName": "Seminte de Floarea Soarelui Sărate Albe",
               "quantity": "40g",
               "price": "5"
             },
             {
-              "productName": "Black Salted Sunflower Seeds",
+              "productName": "Seminte de Floarea Soarelui Sărate Negre",
               "quantity": "40g",
               "price": "3"
             }

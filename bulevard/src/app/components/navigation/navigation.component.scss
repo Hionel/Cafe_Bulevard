@@ -18,7 +18,7 @@
     }
   }
   .navigation__controls__container {
-    height: 70%;
+    height: 60%;
     justify-content: flex-start;
     gap: 1rem;
     .navigation__button {
@@ -28,6 +28,9 @@
       background: transparent;
       cursor: pointer;
     }
+  }
+  .navigation__language__container {
+    height: 10%;
   }
   .navigation__socials__container {
     height: 10%;
@@ -65,9 +68,12 @@
       padding-bottom: 25%;
     }
     .navigation__controls__container {
-      height: 60%;
+      height: 45%;
     }
     .navigation__socials__container {
+      height: 15%;
+    }
+    .navigation__language__container {
       height: 15%;
     }
   }

@@ -5,6 +5,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
@@ -15,10 +20,8 @@ import { CategoryComponent } from './components/category/category.component';
 import { HomeComponent } from './components/home/home.component';
 import { LandingDesignComponent } from './components/landing-design/landing-design.component';
 import { HomeHeaderComponent } from './components/home-header/home-header.component';
-
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatDialogModule } from '@angular/material/dialog';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { LanguageComponent } from './components/language/language.component';
 
 const modules = [
   BrowserModule,
@@ -28,7 +31,12 @@ const modules = [
   FormsModule,
 ];
 
-const materialModules = [MatSidenavModule, MatDialogModule];
+const materialModules = [
+  MatSidenavModule,
+  MatDialogModule,
+  MatSelectModule,
+  MatFormFieldModule,
+];
 const components = [
   AppComponent,
   LandingPageComponent,
@@ -41,6 +49,7 @@ const components = [
   HomeComponent,
   HomeHeaderComponent,
   CarouselComponent,
+  LanguageComponent,
 ];
 @NgModule({
   declarations: [...components],

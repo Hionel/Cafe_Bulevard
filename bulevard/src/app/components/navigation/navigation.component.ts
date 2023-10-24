@@ -6,9 +6,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent {
-  constructor() {}
   @Output() emitNavigationOption = new EventEmitter<string>();
   @Output() emitLandingDesignPageVisibility = new EventEmitter<boolean>();
+  constructor() {}
 
   navLogoUrl: string = '../assets/bar/mug.png';
   socials = [

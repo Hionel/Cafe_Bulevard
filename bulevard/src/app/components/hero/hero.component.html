@@ -8,13 +8,13 @@
       [autoPlayInterval]="10000"
     ></app-carousel>
   </div>
-  <div class="hero__closing__container flexColumn">
-    <h3 class="program__title" [innerText]="heroData.closing.programTitle"></h3>
-    <p class="program__days" [innerText]="heroData.closing.programDays"></p>
-    <p class="program__text" [innerText]="heroData.closing.programText"></p>
-    <p class="program__address" [innerText]="heroData.closing.address"></p>
-    <p class="location__number" [innerText]="heroData.closing.number"></p>
+  <div class="hero__closing__container flexColumn" *ngIf="heroData">
+    <h3 class="program__title" [innerText]="heroData.programTitle"></h3>
+    <p class="program__days" [innerText]="heroData.programDays"></p>
+    <p class="program__text" [innerText]="heroData.programText"></p>
+    <p class="program__address" [innerText]="heroData.address"></p>
+    <p class="location__number" [innerText]="heroData.number"></p>
 
-    <p class="closing__text" [innerText]="heroData.closing.text"></p>
+    <p class="closing__text" [innerText]="heroData.text"></p>
   </div>
 </section>

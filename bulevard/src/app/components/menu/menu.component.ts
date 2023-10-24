@@ -2,8 +2,8 @@ import { Component, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { Category, Menu } from 'src/app/interfaces/imenu';
-import { MenuService } from 'src/app/service/menu.service';
 import { CategoryComponent } from '../category/category.component';
+import { DataService } from 'src/app/service/data.service';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -14,13 +14,16 @@ export class MenuComponent implements OnInit {
   menuTitle: string = 'The Menu';
   @Output() renderedCategory: Category | undefined;
   constructor(
-    private menuService: MenuService,
+    private dataService: DataService,
     private router: Router,
     private dialog: MatDialog
   ) {}
   ngOnInit(): void {
-    this.menuService.getData().subscribe((data) => {
-      this.menu = data;
+    this.dataService.getMenuData().subscribe((data) => (this.menu = data));
+    this.dataService.languageCode$.subscribe((code) => {
+      code === 'en'
+        ? (this.menuTitle = 'The Menu')
+        : (this.menuTitle = 'Meniul');
     });
   }
 
