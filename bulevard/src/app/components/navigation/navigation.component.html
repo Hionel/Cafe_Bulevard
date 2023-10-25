@@ -14,16 +14,12 @@
       GALLERY
     </button>
   </div>
-
-  <div class="navigation__socials__container flexRow">
-    <img
-      class="social__logo"
-      [src]="social.url"
-      alt="no social contact"
-      *ngFor="let social of socials"
-    />
-  </div>
-  <div class="navigation__language__container">
-    <app-language></app-language>
+  <div class="navigation__extras__container flexRow">
+    <div class="navigation__socials__container">
+      <app-socials></app-socials>
+    </div>
+    <div class="navigation__language__container">
+      <app-language></app-language>
+    </div>
   </div>
 </nav>

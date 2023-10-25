@@ -1,0 +1,17 @@
+.socials__container {
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  .social__logo {
+    cursor: pointer;
+    filter: invert(1);
+    width: 1.5rem;
+    aspect-ratio: 1;
+    transition: all 220ms ease-in-out;
+
+    &:hover {
+      scale: 1.1;
+      transition: all 220ms ease-in-out;
+    }
+  }
+}

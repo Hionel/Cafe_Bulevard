@@ -21,7 +21,9 @@ import { HomeComponent } from './components/home/home.component';
 import { LandingDesignComponent } from './components/landing-design/landing-design.component';
 import { HomeHeaderComponent } from './components/home-header/home-header.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
-import { LanguageComponent } from './components/language/language.component';
+
+import { SocialsComponent } from './components/navigation/socials/socials.component';
+import { LanguageComponent } from './components/navigation/language/language.component';
 
 const modules = [
   BrowserModule,
@@ -50,6 +52,7 @@ const components = [
   HomeHeaderComponent,
   CarouselComponent,
   LanguageComponent,
+  SocialsComponent,
 ];
 @NgModule({
   declarations: [...components],

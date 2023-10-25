@@ -11,16 +11,7 @@ export class NavigationComponent {
   constructor() {}
 
   navLogoUrl: string = '../assets/bar/mug.png';
-  socials = [
-    {
-      name: 'instagram',
-      url: '../assets/socials/instagram.png',
-    },
-    {
-      name: 'facebook',
-      url: '../assets/socials/facebook.png',
-    },
-  ];
+
   navigate = (section: string) => {
     this.emitNavigationOption.emit(section);
   };

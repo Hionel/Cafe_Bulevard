@@ -35,7 +35,6 @@ export class LanguageComponent implements OnInit {
   }
 
   changeLanguage = (languageCode: string) => {
-    console.log(languageCode);
     this.dataService.setLanguage(languageCode);
   };
 }
